@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+        <title>BibViz Project Blog</title>
+        <subtitle>A subtitle.</subtitle>
+        <link href="http://bibviz.com/atom.xml" rel="self" />
+        <link href="http://bibviz.com/" />
+        <id>http://bibviz.com/atom.xml</id>
+        <updated>2013-10-07T16:00:00.000Z</updated>
+
+        
+        <entry>
+                <title>Bible Contradiction Contributions</title>
+                <link href="http://bibviz.com/blog/contributing/" />
+                <id>http://bibviz.com/blog/contributing/</id>
+                <updated>2013-10-07T16:00:00.000Z</updated>
+                <content type="html">&lt;h1 id=&quot;contributing&quot;&gt;Contributing&lt;/h1&gt;
+&lt;p&gt;BibViz has come a long way in just such a short time. I&amp;#39;d like to thank the prominent blogs and news sources that shared a link to the site, and everyone who shared on social media, forums, and their personal blogs as well. Hundreds of thousands of people have visited BibViz in the past two months and many have already written me with feedback or left comments. The response to BibViz has been more than I could have ever imagined!&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;http://bibviz.com/blog/contributing/helping-hands.jpg&quot; alt=&quot;Helping hands&quot;&gt;&lt;/p&gt;
+&lt;p&gt;While I plan to continue working on the project, I would like to take this opportunity to request that others who are interested in helping might lend a hand. I have put up a list of contribution ideas on the &lt;a href=&quot;http://github.com/danielgtaylor/bibviz&quot;&gt;Github project page&lt;/a&gt; that I will reproduce here:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;http://bibviz.com/translate.html&quot;&gt;Translations&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;New data sources for &lt;code&gt;web/contents/data/contra.json&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Additional visualizations using D3.js&lt;/li&gt;
+&lt;li&gt;Blog entries&lt;/li&gt;
+&lt;li&gt;Meta-analysis of all data sets&lt;/li&gt;
+&lt;li&gt;Tagging contradictions by severity&lt;/li&gt;
+&lt;li&gt;Tagging contradictions by Christian sect beliefs&lt;/li&gt;
+&lt;li&gt;Support for newer Bible versions (e.g. NIV, ESV)&lt;ul&gt;
+&lt;li&gt;Part of this work would be tagging contradictions by version&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Tagging contradictions with Christian responses&lt;/li&gt;
+&lt;li&gt;Style, script, page, and search optimizations&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Many of these ideas don&amp;#39;t require technical skills like programming or web development. In particular, I&amp;#39;d love to get some high quality translations into various languages. Others could use the help of experts in data visualization (I&amp;#39;m not one of them).&lt;/p&gt;
+&lt;p&gt;New blog posts could use people more familiar with the history of the Bible than I am. I would love to have blog posts written by different people from different perspectives. It seems easy enough to choose a particular contradiction or issue and write an article about it. The blog uses Markdown for formatting, but you can use your favorite editor and I can handle formatting.&lt;/p&gt;
+&lt;p&gt;I have gotten a lot of great feedback so far. I&amp;#39;d love to see more.&lt;/p&gt;
+</content>
+                <author>
+                      <name>Daniel G. Taylor</name>
+                      <email>danielgtaylor@gmail.com</email>
+                </author>
+        </entry>
+        
+        <entry>
+                <title>Bible Contradiction Search</title>
+                <link href="http://bibviz.com/blog/bible-contradiction-search/" />
+                <id>http://bibviz.com/blog/bible-contradiction-search/</id>
+                <updated>2013-09-19T03:00:00.000Z</updated>
+                <content type="html">&lt;h1 id=&quot;bible-contradiction-search&quot;&gt;Bible Contradiction Search&lt;/h1&gt;
+&lt;p&gt;It&amp;#39;s now possible to filter contradictions with a text search right on the main BibViz Project homepage. This works for any supported data set and filters items in real-time as you type:&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;http://bibviz.com/blog/bible-contradiction-search/bible-contradiction-search.png&quot; alt=&quot;Bible contradiction search&quot;&gt;&lt;/p&gt;
+&lt;p&gt;Also included with these updates are how URLs are handled. A new URL hash processor is included that updates the page hash and reads it on page load, allowing you to set filters and save the page to share with a friend. For example, the URL to show all contradictions from the EvilBible.com data set that touch the book Exodus, the URL would contain &lt;code&gt;#source:evil-bible,book:Exodus&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;http://bibviz.com/blog/bible-contradiction-search/url-hashes.png&quot; alt=&quot;URL hashes&quot;&gt;&lt;/p&gt;
+&lt;p&gt;Hopefully this makes it easier to share and directly link to contradiction chart data!&lt;/p&gt;
+</content>
+                <author>
+                      <name>Daniel G. Taylor</name>
+                      <email>danielgtaylor@gmail.com</email>
+                </author>
+        </entry>
+        
+        <entry>
+                <title>EvilBible.com Data Set</title>
+                <link href="http://bibviz.com/blog/evil-bible-data-set/" />
+                <id>http://bibviz.com/blog/evil-bible-data-set/</id>
+                <updated>2013-09-14T20:00:00.000Z</updated>
+                <content type="html">&lt;h1 id=&quot;evilbible-com-data-set&quot;&gt;EvilBible.com Data Set&lt;/h1&gt;
+&lt;p&gt;BibViz now supports displaying data from the list of contradictions on &lt;a href=&quot;http://www.evilbible.com/Biblical%20Contradictions.htm&quot;&gt;EvilBible.com&lt;/a&gt; as part of the ongoing &lt;a href=&quot;http://bibviz.com/blog/multiple-source-data-sets/&quot;&gt;support of multiple data sets&lt;/a&gt;. The source contains 141 contradictions and provides another unique perspective on the issues of the Bible.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;http://bibviz.com/blog/evil-bible-data-set/evil-bible-data.png&quot; alt=&quot;Contradictions from EvilBible.com&quot;&gt;&lt;/p&gt;
+&lt;p&gt;Along with support for the EvilBible data set, BibViz now supports annotations for individual verse data. Currently this means things like grouping verses, for example in the image below verses are grouped by whether they support or condemn adultery:&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;http://bibviz.com/blog/evil-bible-data-set/annotated-verses.png&quot; alt=&quot;Annotated contradiction verses&quot;&gt;&lt;/p&gt;
+&lt;p&gt;In the future other annotations can be used to help with filtering data. One that is planned is to mark the severity of contradiction, so that it becomes easier to view only the most severe issues and filter out the minor ones.&lt;/p&gt;
+&lt;p&gt;Expect to see annotated verse support in the Skeptic&amp;#39;s Annotated Bible and Infidels.org data sets in the near future.&lt;/p&gt;
+</content>
+                <author>
+                      <name>Daniel G. Taylor</name>
+                      <email>danielgtaylor@gmail.com</email>
+                </author>
+        </entry>
+        
+        <entry>
+                <title>Multiple Source Data Sets</title>
+                <link href="http://bibviz.com/blog/multiple-source-data-sets/" />
+                <id>http://bibviz.com/blog/multiple-source-data-sets/</id>
+                <updated>2013-09-09T16:00:00.000Z</updated>
+                <content type="html">&lt;h1 id=&quot;multiple-source-data-sets&quot;&gt;Multiple Source Data Sets&lt;/h1&gt;
+&lt;p&gt;BibViz now supports displaying data from multiple source data sets. Currently supported are both the Skeptic&amp;#39;s Annotated Bible (sab) and the list of contradictions from Infidels.org. This change is in response to the critiques about the choice of source for the data to display on BibViz. Giving you a choice of source means that you no longer need to rely on just one party for potential contradictions. It also opens up the ability to do meta-analysis of the varying datasets to determine common themes.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;http://bibviz.com/blog/multiple-source-data-sets/infidels-data.png&quot; alt=&quot;Contradictions from Infidels.org&quot;&gt;&lt;/p&gt;
+&lt;p&gt;The source data defaults to the Skeptic&amp;#39;s Annotated Bible, but can be changed via the &lt;strong&gt;Source&lt;/strong&gt; selector in the contradiction chart filters.&lt;/p&gt;
+&lt;p&gt;Along with multiple sources come some other changes to the site. First, clicking on a contradiction now gives you a page with individual Bible verses as well as quick buttons for context in the three most popular versions (Authorized King James Version, New International Version, New Living Translation) and a link back to the original site which contains the contradiction. This means that you get a consistent interface for all source data sets, and it&amp;#39;s much easier to debate the context of a particular verse.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;http://bibviz.com/blog/multiple-source-data-sets/contradiction-page.png&quot; alt=&quot;Contradiction page&quot;&gt;&lt;/p&gt;
+&lt;p&gt;Along with those changes is another big one: user comments. Each individual contradiction page now has a place for you to leave comments, and those voted best will be displayed first.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;http://bibviz.com/blog/multiple-source-data-sets/comments.png&quot; alt=&quot;User comments&quot;&gt;&lt;/p&gt;
+&lt;p&gt;Because the majority of changes required to support multiple data sets is now complete, adding additional sources is relatively easy. Expect to see more in the future, and if you have any suggestions please add them in the comments below!&lt;/p&gt;
+</content>
+                <author>
+                      <name>Daniel G. Taylor</name>
+                      <email>danielgtaylor@gmail.com</email>
+                </author>
+        </entry>
+        
+        <entry>
+                <title>Bible Contradictions Posters</title>
+                <link href="http://bibviz.com/blog/bible-contradictions-poster/" />
+                <id>http://bibviz.com/blog/bible-contradictions-poster/</id>
+                <updated>2013-09-04T07:00:00.000Z</updated>
+                <content type="html">&lt;h1 id=&quot;bible-contradictions-posters&quot;&gt;Bible Contradictions Posters&lt;/h1&gt;
+&lt;p&gt;Many BibViz.com visitors have been asking for larger printable versions of the site. Today I&amp;#39;m proud to announce that two posters have gone on sale in the &lt;a href=&quot;http://www.zazzle.com/bibviz*&quot;&gt;BibViz store&lt;/a&gt;! The first shows the infographics from the main BibViz page, while the second shows just the contradictions chart and table of contradiction information.&lt;/p&gt;
+&lt;p&gt;Both posters include a link to the BibViz.com website, where the infographics can be interactively explored.&lt;/p&gt;
+&lt;div class=&quot;left&quot; style=&quot;margin-right: 12px;&quot;&gt;
+[![BibViz Poster](bible-contradictions-poster.png)](http://www.zazzle.com/bible_contradictions_poster_14_x_24-228921555189929759)
+&lt;/div&gt;
+&lt;div class=&quot;left&quot;&gt;
+[![BibViz Poster 2](bible-contradictions-poster2.png)](http://www.zazzle.com/bible_contradictions_poster_14_x_22-228252201328757395)
+&lt;/div&gt;
+&lt;div class=&quot;clear&quot;&gt;&lt;/div&gt;
+
+&lt;p&gt;Each sale of the posters benefits BibViz.com, helping to cover the costs of hosting, server management and new development.&lt;/p&gt;
+&lt;p&gt;If you have a printer capable of printing posters and would like to print one yourself, you can do so by generating the poster image file with &lt;a href=&quot;http://phantomjs.org/&quot;&gt;PhantomJS&lt;/a&gt; and &lt;a href=&quot;https://github.com/ariya/phantomjs/blob/master/examples/rasterize.js&quot;&gt;rasterize.js&lt;/a&gt;. Please make sure that your PhantomJS build supports WebFonts, then run the following:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;language-bash&quot;&gt;phantomjs rasterize.js http://bibviz.com/poster.html poster.png null 2&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;If you decide to print your own poster, please consider &lt;a href=&quot;https://spb.io/0rgLYyRkJK&quot;&gt;donating a few dollars to BibViz&lt;/a&gt;.&lt;/p&gt;
+</content>
+                <author>
+                      <name>Daniel G. Taylor</name>
+                      <email>danielgtaylor@gmail.com</email>
+                </author>
+        </entry>
+        
+        <entry>
+                <title>BibViz Week One</title>
+                <link href="http://bibviz.com/blog/week-one/" />
+                <id>http://bibviz.com/blog/week-one/</id>
+                <updated>2013-08-27T01:00:00.000Z</updated>
+                <content type="html">&lt;h1 id=&quot;bibviz-week-one&quot;&gt;BibViz: Week One&lt;/h1&gt;
+&lt;p&gt;BibViz launched exactly &lt;strong&gt;one week ago&lt;/strong&gt; and has been a huge success! I&amp;#39;d like to take this opportunity to write a little bit about the project and how it was able to grow to &lt;strong&gt;hundreds of thousands&lt;/strong&gt; of views so quickly, as well as to thank everyone who participated by blogging about the project, sharing with their friends on social networks, or just visiting and exploring the site.&lt;/p&gt;
+&lt;h2 id=&quot;who-what-and-why&quot;&gt;Who, What and Why&lt;/h2&gt;
+&lt;p&gt;The idea for BibViz formed in early August 2013 while browsing around for the &lt;a href=&quot;http://www.project-reason.org/gallery3/image/105/&quot;&gt;Reason Project&amp;#39;s biblical contradictions poster&lt;/a&gt; after a heated religious debate about biblical literalism and public policy / school programs. I was able to find it, but once again saw that it hadn&amp;#39;t been updated to remove duplicate entries and was difficult to navigate or do much with. When a friend suggested that I could do better the thought nagged at the back of my mind for the next few days.&lt;/p&gt;
+&lt;p&gt;I did some research and found the excellent &lt;a href=&quot;http://www.skepticsannotatedbible.com&quot;&gt;Skeptic&amp;#39;s Annotated Bible&lt;/a&gt; website by Steve Wells, who deserves all credit for crawling through the Bible and finding the various contradictions, violent passages and more. Using his website as a resource I was able to data mine the information with a few quick &lt;a href=&quot;http://nodejs.org/&quot;&gt;Node.js&lt;/a&gt; and &lt;a href=&quot;http://coffeescript.org/&quot;&gt;Coffeescript&lt;/a&gt; scripts and massage the data into a usable format for myself. Then I was able to create a quick basic website and generate charts using &lt;a href=&quot;http://d3js.org/&quot;&gt;D3.js&lt;/a&gt;, an open source data visualization library with support for interactive elements through SVG and Javascript.&lt;/p&gt;
+&lt;p&gt;From start to finish it took about a week to get a decent looking site, with some final touches for social media markup and a few minor fixes after launch. This included research time, time learning some Node.js libraries, time learning D3.js, etc. Today I continue to work on the site, adding features and fixing issues that people find and bring to my attention. I&amp;#39;m working on adding more content (like this blog) and setting up a framework for translations into various languages through static site generators.&lt;/p&gt;
+&lt;p&gt;Some people have asked why I wasted time creating such a site. I believe that &lt;strong&gt;there is value in having useful resources for people to easily explore and learn&lt;/strong&gt;. Given that 46% of Americans believe in a literal interpretation of a creation myth and other stories in a very old book with such a colorful past it seems worthwhile to provide a resource for exploring the issues with taking that book literally. These 46% of Americans are voting in elections, making choices in their communities and driving grassroots campaigns around the nation based on their arguably false beliefs. I believe that education is the answer, and I hope that this project helps toward that goal.&lt;/p&gt;
+&lt;p&gt;Many other people have asked about my own personal beliefs, but I want to reiterate that what I believe does not matter. Take a look at the evidence, think for yourself, and come to your own conclusions.&lt;/p&gt;
+&lt;h2 id=&quot;coverage&quot;&gt;Coverage&lt;/h2&gt;
+&lt;p&gt;The project has gotten a lot of great coverage from many sources, but I&amp;#39;d like to highlight a few of the larger ones here.&lt;/p&gt;
+&lt;p&gt;Before I had even &lt;strong&gt;publicly announced the site&lt;/strong&gt;, but after reaching out to Steve Wells, Hemant Mehta of Friendly Atheist emailed me asking about the project - apparently one of his readers had found the site. Hemant had this to say on &lt;a href=&quot;http://www.patheos.com/blogs/friendlyatheist/2013/08/19/an-incredible-interactive-chart-of-biblical-contradictions/&quot;&gt;his blog&lt;/a&gt; the next day:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Now, computer programmer Daniel G. Taylor has taken all that data and turned it into a visual masterpiece...&lt;/p&gt;
+&lt;p&gt;The whole site is seriously an incredible resource. Go there and just play around with it.&lt;/p&gt;
+&lt;div&gt;&lt;a href=&quot;http://www.patheos.com/blogs/friendlyatheist/2013/08/19/an-incredible-interactive-chart-of-biblical-contradictions/&quot;&gt;Hemant Mehta, Friendly Atheist&lt;/a&gt;&lt;/div&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;After this post was a big surge of traffic from Facebook, but due to the nature of sharing only with friends I&amp;#39;m not able to easily find who shared what there. To my anonymous supporters I say thanks.&lt;/p&gt;
+&lt;p&gt;Next it was picked up as &lt;a href=&quot;http://www.underconsideration.com/quipsologies/archives/august_2013/arminvit_80.php&quot;&gt;#80 for August on Quipsologies&lt;/a&gt;, and from there it hit Gizmodo in &lt;a href=&quot;http://gizmodo.com/this-comprehensive-map-traces-463-of-the-bibles-major-1188177994&quot;&gt;English&lt;/a&gt; and Spanish.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Now, one designer has built a handy map to help us navigate the text.&lt;/p&gt;
+&lt;p&gt;Using data from the Skeptic&amp;#39;s Annotated Bible, programmer Daniel G. Taylor created this encyclopedic visualization of 463 of the Bible&amp;#39;s major contradictions.&lt;/p&gt;
+&lt;div&gt;&lt;a href=&quot;http://gizmodo.com/this-comprehensive-map-traces-463-of-the-bibles-major-1188177994&quot;&gt;Gizmodo&lt;/a&gt;&lt;/div&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;It also hit &lt;a href=&quot;http://misteriosdomundo.com/este-mapa-revela-463-contradicoes-da-biblia&quot;&gt;Misterios Domundo&lt;/a&gt; and with it a slew of Spanish-language tweets flew by.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Usando dados do próprio livro, o programador e designer Daniel G. Taylor criou este site que contem 463 das principais contradições da Bíblia.&lt;/p&gt;
+&lt;div&gt;&lt;a href=&quot;&quot;&gt;Misterios Domundo&lt;/a&gt;&lt;/div&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;&lt;a href=&quot;https://twitter.com/Slate/status/371064266880978945&quot;&gt;Slate&lt;/a&gt; also released a brief tweet about the site, causing a  spike in traffic:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Charting the Bible&amp;#39;s contradictions: &lt;a href=&quot;http://slate.me/154lv1M&quot;&gt;http://slate.me/154lv1M&lt;/a&gt;&lt;/p&gt;
+&lt;div&gt;&lt;a href=&quot;https://twitter.com/Slate/status/371064266880978945&quot;&gt;Slate (via Twitter)&lt;/a&gt;&lt;/div&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;Aside from the larger sources above many, many smaller sources shared the site as well, and tweets have been flying in at least half a dozen languages around the clock.&lt;/p&gt;
+&lt;h2 id=&quot;statistics&quot;&gt;Statistics&lt;/h2&gt;
+&lt;p&gt;In the past week, BibViz has gotten over &lt;strong&gt;370,000 page views&lt;/strong&gt; from over &lt;strong&gt;160,000 unique visitors&lt;/strong&gt;. These visitors came from &lt;strong&gt;over 190 different countries&lt;/strong&gt; in the world, from all kinds of ages and backgrounds. The vast majority of traffic came from the &lt;strong&gt;United States&lt;/strong&gt; with the &lt;strong&gt;UK&lt;/strong&gt; in second. Brazil, Canada, Austria, Hungary, the Netherlands, Spain and Romania also had a good number of visitors.&lt;/p&gt;
+&lt;p&gt;I&amp;#39;m not sure if this qualifies as &amp;quot;going viral&amp;quot; but I have to say I&amp;#39;m struck with awe at how popular BibViz has become in so little time.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;http://bibviz.com/blog/week-one/views.png&quot; alt=&quot;Pageviews and visitors&quot;&gt;
+&lt;img src=&quot;http://bibviz.com/blog/week-one/countries.png&quot; alt=&quot;Top countries&quot;&gt;&lt;/p&gt;
+&lt;p&gt;Facebook provides a nifty tool they call &lt;a href=&quot;http://www.facebook.com/insights&quot;&gt;Insights&lt;/a&gt; to let the owner of a website track anonymous shares, likes and demographics. BibViz had &lt;strong&gt;over 6,250 likes and shares&lt;/strong&gt; which in turn meant almost &lt;strong&gt;two million impressions&lt;/strong&gt; on people&amp;#39;s walls. Interestingly, most sharing was performed by men by a wide margin. BibViz was shared in posts using &lt;strong&gt;six different languages&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;http://bibviz.com/blog/week-one/facebook.png&quot; alt=&quot;Facebook insights&quot;&gt;
+&lt;img src=&quot;http://bibviz.com/blog/week-one/fb-demographics.png&quot; alt=&quot;Facebook demographics&quot;&gt;&lt;/p&gt;
+&lt;p&gt;As for the server hosting the website, it is hosted by &lt;a href=&quot;https://www.digitalocean.com/?refcode=1da202e90785&quot;&gt;Digital Ocean&lt;/a&gt; and held up fantastically. I don&amp;#39;t want this to turn into a review or ad for their service, but I will say that my entire experience so far with Digital Ocean has been wonderful. Signing up was painless (use &lt;em&gt;OMGSSD10&lt;/em&gt; for $10 free credit) and I had a virtual server up and running in minutes. Then it was just a matter of setting up DNS to point to the server, setting up Nginx and we&amp;#39;re ready to rock.&lt;/p&gt;
+&lt;p&gt;The service saw short-term (5-minute average) spikes of &lt;strong&gt;over 10 Mbps&lt;/strong&gt; network traffic and around &lt;strong&gt;20% CPU&lt;/strong&gt; use with around &lt;strong&gt;100 requests per second&lt;/strong&gt;. Here are the 30-minute averages for the week for network and CPU use (disk usage was so low that the graph showed almost nothing):&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;http://bibviz.com/blog/week-one/network.png&quot; alt=&quot;Network graph&quot;&gt;
+&lt;img src=&quot;http://bibviz.com/blog/week-one/cpu.png&quot; alt=&quot;CPU graph&quot;&gt;&lt;/p&gt;
+&lt;p&gt;_Note_: these graphs are for the &lt;strong&gt;lowest tier virtual server&lt;/strong&gt;!&lt;/p&gt;
+&lt;p&gt;As for donations and referal sales, I have gotten a small number of each. Very few people seem to have clicked the donate button (bottom right of this page), but I am eternally thankful to those that have. Your donations will help to cover server costs and future development of this website.&lt;/p&gt;
+&lt;h2 id=&quot;thanks&quot;&gt;Thanks&lt;/h2&gt;
+&lt;p&gt;I want to take this opportunity to thank everyone that shared and visited BibViz over the past week again. You have made this project come alive.&lt;/p&gt;
+&lt;p&gt;Let&amp;#39;s see what we can do in the coming months!&lt;/p&gt;
+</content>
+                <author>
+                      <name>Daniel G. Taylor</name>
+                      <email>danielgtaylor@gmail.com</email>
+                </author>
+        </entry>
+        
+
+</feed>

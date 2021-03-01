@@ -1,0 +1,991 @@
+<!DOCTYPE html>
+
+<html lang="en" itemscope itemtype="http://schema.org/Article">
+    <head>
+        <title>BibViz Project - Bible Contradictions, Misogyny, Violence, Inaccuracies interactively visualized</title>
+
+        <meta charset="utf-8"/>
+        <meta name="description" content="A beautiful and interactive resource to explore Bible contradictions, cruelty and other negative aspects of the Bible"/>
+
+        <meta property="og:title" content="BibViz Project - Bible Contradictions, Misogyny, Violence, Inaccuracies interactively visualized"/>
+        <meta property="og:description" content="A beautiful and interactive resource to explore Bible contradictions, cruelty and other negative aspects of the Bible"/>
+        <meta property="og:type" content="article"/>
+        <meta property="og:image" content="/img/square.png"/>
+        <meta property="og:url" content="/"/>
+        <meta property="fb:admins" content="65903256"/>
+
+        <meta property="twitter:card" content="overview"/>
+        <meta property="twitter:title" content="BibViz Project - Bible Contradictions, Misogyny, Violence, Inaccuracies interactively visualized"/>
+        <meta property="twitter:description" content="A beautiful and interactive resource to explore Bible contradictions, cruelty and other negative aspects of the Bible"/>
+        <meta property="twitter:image" content="/img/square.png"/>
+        <meta property="twitter:url" content="/"/>
+
+        <meta itemprop="name" content="BibViz Project - Bible Contradictions, Misogyny, Violence, Inaccuracies interactively visualized"/>
+        <meta itemprop="description" content="A beautiful and interactive resource to explore Bible contradictions, cruelty and other negative aspects of the Bible"/>
+        <meta itemprop="image" content="/img/square.png"/>
+
+        <link rel="shortcut icon" href="/img/favicon.ico"/>
+        <link rel="author" href="https://plus.google.com/u/0/117442582930902051362"/>
+        <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Allura|Raleway"/>
+        <link rel="stylesheet" type="text/css" href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css"/>
+        <link rel="stylesheet" type="text/css" href="/styles/main.css?v=5"/>
+        
+
+        <link rel="alternate" type="application/atom+xml" title="Blog" href="/atom.xml" />
+    </head>
+        
+    <body>
+        
+            <nav>
+                <div class="container">
+                    <a href="/">Home</a>
+                    <a href="/blog/contributing/">Blog</a>
+                    <a href="http://www.zazzle.com/bibviz*" target="_blank">Store</a>
+                    
+                        <i class="icon-comments"></i>
+                        <select id="langSelect">
+                            
+                                <option value="en" selected>English</option>
+                            
+                                <option value="de" >Deutsch</option>
+                            
+                            <option disabled>———————</option>
+                            <option value="new">New translation</option>
+                        </select>
+                    
+                </div>
+            </nav>
+            <div class="sep"></div>
+        
+        <div id="container">
+            
+                
+
+<h1 style="margin-top: -40px;">The Holy Bible</h1>
+
+<h2><i class="icon-sitemap"></i> Bible Contradictions <a id="contradictions" href="#contradictions"><i class="icon-link"></i></a></h2>
+<div class="filters">
+    <div>
+        <label for="source-select">Source:</label>
+        <select id="source-select">
+            <option value="sab">sab</option>
+        </select>
+    </div>
+    <div>
+        <label for="book-select">Book:</label>
+        <select id="book-select">
+            <option value="All">All</option>
+        </select>
+    </div>
+    <div>
+        <label for="type-select">Type:</label>
+        <select id="type-select">
+            <option value="All">All</option>
+        </select>
+    </div>
+    <div>
+        <label for="color-select">Colors:</label>
+        <select id="color-select">
+            <option value="Crimson">Crimson</option>
+            <option value="Rainbow">Rainbow</option>
+        </select>
+    </div>
+    <div>
+        <input id="text-search" placeholder="Search..." style="width: 120px"/>
+    </div>
+    <div>
+        <a href="#contradictionList" style="color: white; text-decoration: none;">See full list <i class="icon-download"></i></a>
+    </div>
+</div>
+<svg id="contradictions-chart" width="1200" height="500"></svg>
+<h2><i class="icon-beaker"></i> Scientific Absurdities &amp; Historical Inaccuracies<a id="science" href="#science"><i class="icon-link"></i></a></h2>
+<svg id="science-chart" width="1200" height="100"></svg>
+<blockquote class="science">And there appeared another wonder in heaven; and behold a great red dragon, having seven heads and ten horns, and seven crowns upon his heads.<br/><br/><div><a href="http://www.biblegateway.com/passage/?search=Revelation%2012:3&amp;version=KJV">Revelation 12:3</a></div></blockquote>
+<blockquote class="science">And Methuselah lived after he begat Lamech seven hundred eighty and two years, and begat sons and daughters: And all the days of Methuselah were nine hundred sixty and nine years: and he died.<div><a href="http://www.biblegateway.com/passage/?search=Genesis%205:26-27&amp;version=KJV">Genesis 5:26-27</a></div></blockquote>
+<div class="clear"></div>
+<h2><i class="icon-rocket"></i> Cruelty &amp; Violence <a id="violence" href="#violence"><i class="icon-link"></i></a></h2>
+<svg id="violence-chart" width="1200" height="100"></svg>
+<blockquote class="violence">And everyone who would not seek the Lord, the God of Israel, was to be put to death, whether small or great, whether man or woman.<div><a href="http://www.biblegateway.com/passage/?search=2%20Chronicles%2015:13&amp;version=KJV">2 Chronicles 15:13</a></div></blockquote>
+<blockquote class="violence">Six days may work be done; but in the seventh is the sabbath of rest, holy to the Lord whosoever doeth any work in the sabbath day, he shall surely be put to death.<div><a href="http://www.biblegateway.com/passage/?search=Exodus%2031:15&amp;version=KJV">Exodus 31:15</a></div></blockquote>
+<div class="clear"></div>
+<h2><i class="icon-female"></i> Misogyny, Violence &amp; Discrimination Against Women <a id="misogyny" href="#misogyny"><i class="icon-link"></i></a></h2>
+<svg id="misogyny-chart" width="1200" height="100"></svg>
+<blockquote class="misogyny">And the daughter of any priest, if she profane herself by playing the whore, she profaneth her father: she shall be burnt with fire.<div><a href="http://www.biblegateway.com/passage/?search=Leviticus%2021:9&amp;version=KJV">Leviticus 21:9</a></div></blockquote>
+<blockquote class="misogyny">But if this thing be true, and the tokens of virginity be not found for the damsel. Then... the men of her city shall stone her with stones that she die.<div><a href="http://www.biblegateway.com/passage/?search=Deuteronomy%2022:20-21&amp;version=KJV">Deuteronomy 22:20-21</a></div></blockquote>
+<div class="clear"></div>
+<h2><i class="icon-heart"></i> Discrimination Against Homosexuals <a id="homosexual" href="#homosexual"><i class="icon-link"></i></a></h2>
+<svg id="homosexual-chart" width="1200" height="100"></svg>
+<blockquote class="homosexual">If a man also lie with mankind, as he lieth with a woman, both of them have committed an abomination: they shall surely be put to death; their blood shall be upon them.<br/><br/><div><a href="http://www.biblegateway.com/passage/?search=Leviticus%2020:13&amp;version=KJV">Leviticus 20:13</a></div></blockquote>
+<blockquote class="homosexual">Men, leaving the natural use of the woman, burned in their lust one toward another; men with men working that which is unseemly, and receiving in themselves that recompence of their error which was meet.<div><a href="http://www.biblegateway.com/passage/?search=Romans%201:27&amp;version=KJV">Romans 1:27</a></div></blockquote>
+<div class="clear"></div>
+<h2><i class="icon-tasks"></i> Interesting Poll Data <a id="polls" href="#polls"><i class="icon-link"></i></a></h2>
+<svg id="pCreation" width="200" height="200" style="float: left"></svg>
+<svg id="pCreationCollege" width="200" height="200" style="float: right;"></svg>
+<blockquote class="poll">Forty-six percent of Americans believe in the creationist view that God created humans in their present form at one time within the last 10,000 years.<div><a href="http://www.gallup.com/poll/155003/hold-creationist-view-human-origins.aspx">Gallup (2012)</a></div></blockquote>
+<blockquote class="poll" style="float: right;">Americans with postgraduate education are... least likely to say God created humans in their present form within the last 10,000 years.<div><a href="http://www.gallup.com/poll/155003/hold-creationist-view-human-origins.aspx">Gallup (2012)</a></div></blockquote>
+<div class="clear" style="height: 48px;"></div>
+<svg id="pChristian" width="200" height="200" style="float: left"></svg>
+<svg id="pReligious" width="200" height="200" style="float: right;"></svg>
+<blockquote class="poll">The large majority of Americans -- 77% of the adult population -- identify with a Christian religion... Mormons are by far the most religious of any group.<div><a href="http://www.gallup.com/poll/159548/identify-christian.aspx">Gallup (2012)</a></div></blockquote>
+<blockquote class="poll" style="float: right;">Sixty-nine percent of American adults are very or moderately religious, based on self-reports of the importance of religion in their daily lives and attendance at religious services.<div><a href="http://www.gallup.com/poll/159050/seven-americans-moderately-religious.aspx">Gallup (2012)</a></div></blockquote>
+<div class="clear"></div>
+<h3>BibViz Merchandise</h3>
+<div>
+    <div class="poster">
+        <a href="http://www.zazzle.com/bible_contradictions_poster_14_x_24-228921555189929759?rf=238372057425685940" style="float:left"><img height="200" src="/blog/bible-contradictions-poster/bible-contradictions-poster.png"/></a>
+        <h4>Bible Contradictions Poster 1</h4>
+        <h5>
+            14" x 24"
+        </h5>
+        <p>
+            Contradictions, violence, misogyny, homophobia and poll information on a poster.
+        </p>
+        <p>
+            <a class="btn btn-small" href="http://www.zazzle.com/bible_contradictions_poster_14_x_24-228921555189929759?rf=238372057425685940">Buy Now</a>
+        </p>
+    </div>
+    <div class="poster">
+        <a href="http://www.zazzle.com/bible_contradictions_poster_14_x_22-228252201328757395?rf=238372057425685940" style="float:left"><img height="200" src="/blog/bible-contradictions-poster/bible-contradictions-poster2.png"/></a>
+        <h4>Bible Contradictions Poster 2</h4>
+        <h5>
+            14" x 22"
+        </h5>
+        <p>
+            Over 400 contradictions charted and listed on a poster.
+        </p>
+        <p>
+            <a class="btn btn-small" href="http://www.zazzle.com/bible_contradictions_poster_14_x_22-228252201328757395?rf=238372057425685940">Buy Now</a>
+        </p>
+    </div>
+    <div class="clear"></div>
+</div>
+<h3>Interesting Reading Material <a id="readingMaterial" href="#readingMaterial"><i class="icon-link"></i></a></h3>
+<div class="books">
+    
+    
+    
+        <a href="http://www.amazon.com/gp/product/0988245108/ref=as_li_tf_il?ie=UTF8&amp;camp=1789&amp;creative=9325&amp;creativeASIN=0988245108&amp;linkCode=as2&amp;tag=bibvicom-20"><img border="0" src="/img/0988245108.png" /></a><img src="http://ir-na.amazon-adsystem.com/e/ir?t=bibvicom-20&amp;l=as2&amp;o=1&amp;a=0988245108" width="1" height="1" border="0" alt="" style="border:none !important; margin:0px !important;" />
+    
+        <a href="http://www.amazon.com/gp/product/0988245116/ref=as_li_tf_il?ie=UTF8&amp;camp=1789&amp;creative=9325&amp;creativeASIN=0988245116&amp;linkCode=as2&amp;tag=bibvicom-20"><img border="0" src="/img/0988245116.png" /></a><img src="http://ir-na.amazon-adsystem.com/e/ir?t=bibvicom-20&amp;l=as2&amp;o=1&amp;a=0988245116" width="1" height="1" border="0" alt="" style="border:none !important; margin:0px !important;" />
+    
+        <a href="http://www.amazon.com/gp/product/1416594795/ref=as_li_tf_il?ie=UTF8&amp;camp=1789&amp;creative=9325&amp;creativeASIN=1416594795&amp;linkCode=as2&amp;tag=bibvicom-20"><img border="0" src="/img/1416594795.png" /></a><img src="http://ir-na.amazon-adsystem.com/e/ir?t=bibvicom-20&amp;l=as2&amp;o=1&amp;a=1416594795" width="1" height="1" border="0" alt="" style="border:none !important; margin:0px !important;" />
+    
+        <a href="http://www.amazon.com/gp/product/0618918248/ref=as_li_tf_il?ie=UTF8&amp;camp=1789&amp;creative=9325&amp;creativeASIN=0618918248&amp;linkCode=as2&amp;tag=bibvicom-20"><img border="0" src="/img/0618918248.png" /></a><img src="http://ir-na.amazon-adsystem.com/e/ir?t=bibvicom-20&amp;l=as2&amp;o=1&amp;a=0618918248" width="1" height="1" border="0" alt="" style="border:none !important; margin:0px !important;" />
+    
+        <a href="http://www.amazon.com/gp/product/0446697966/ref=as_li_tf_il?ie=UTF8&amp;camp=1789&amp;creative=9325&amp;creativeASIN=0446697966&amp;linkCode=as2&amp;tag=bibvicom-20"><img border="0" src="/img/0446697966.png" /></a><img src="http://ir-na.amazon-adsystem.com/e/ir?t=bibvicom-20&amp;l=as2&amp;o=1&amp;a=0446697966" width="1" height="1" border="0" alt="" style="border:none !important; margin:0px !important;" />
+    
+        <a href="http://www.amazon.com/gp/product/0307278778/ref=as_li_tf_il?ie=UTF8&amp;camp=1789&amp;creative=9325&amp;creativeASIN=0307278778&amp;linkCode=as2&amp;tag=bibvicom-20"><img border="0" src="/img/0307278778.png" /></a><img src="http://ir-na.amazon-adsystem.com/e/ir?t=bibvicom-20&amp;l=as2&amp;o=1&amp;a=0307278778" width="1" height="1" border="0" alt="" style="border:none !important; margin:0px !important;" />
+    
+        <a href="http://www.amazon.com/gp/product/0143038338/ref=as_li_tf_il?ie=UTF8&amp;camp=1789&amp;creative=9325&amp;creativeASIN=0143038338&amp;linkCode=as2&amp;tag=bibvicom-20"><img border="0" src="/img/0143038338.png" /></a><img src="http://ir-na.amazon-adsystem.com/e/ir?t=bibvicom-20&amp;l=as2&amp;o=1&amp;a=0143038338" width="1" height="1" border="0" alt="" style="border:none !important; margin:0px !important;" />
+    
+        <a href="http://www.amazon.com/gp/product/1569755671/ref=as_li_tf_il?ie=UTF8&amp;camp=1789&amp;creative=9325&amp;creativeASIN=1569755671&amp;linkCode=as2&amp;tag=bibvicom-20"><img border="0" src="/img/1569755671.png" /></a><img src="http://ir-na.amazon-adsystem.com/e/ir?t=bibvicom-20&amp;l=as2&amp;o=1&amp;a=1569755671" width="1" height="1" border="0" alt="" style="border:none !important; margin:0px !important;" />
+    
+        <a href="http://www.amazon.com/gp/product/1569756775/ref=as_li_tf_il?ie=UTF8&amp;camp=1789&amp;creative=9325&amp;creativeASIN=1569756775&amp;linkCode=as2&amp;tag=bibvicom-20"><img border="0" src="/img/1569756775.png" /></a><img src="http://ir-na.amazon-adsystem.com/e/ir?t=bibvicom-20&amp;l=as2&amp;o=1&amp;a=1569756775" width="1" height="1" border="0" alt="" style="border:none !important; margin:0px !important;" />
+    
+
+</div>
+<h3>Interesting Videos <a id="videos" href="#videos"><i class="icon-link"></i></a></h3>
+<iframe width="580" height="360" src="http://www.youtube.com/embed/PK7P7uZFf5o?feature=player_detailpage" frameborder="0" allowfullscreen style="margin-right: 30px;"></iframe>
+<iframe width="580" height="360" src="http://www.youtube.com/embed/RB3g6mXLEKk?feature=player_detailpage" frameborder="0" allowfullscreen></iframe>
+<br/><br/>
+<iframe width="580" height="360" src="http://www.youtube.com/embed/AcO4TnrskE0?feature=player_detailpage" frameborder="0" allowfullscreen style="margin-right: 30px;"></iframe>
+<iframe width="580" height="360" src="http://www.youtube.com/embed/xhhEeI3K7GU?feature=player_detailpage" frameborder="0" allowfullscreen></iframe>
+<h3>List of Bible Contradictions Depicted Above (Click for more info) <a id="contradictionList" href="#contradictionList"><i class="icon-link"></i></a></h3>
+<h4>Skeptic&#39;s Annotated Bible Contradictions</h4>
+    <table class="contradictionsTable">
+        <tr>
+        
+        
+            <td><a href="/how-many-men-did-the-chief-of-davids-captains-kill-sab.html">1 How many men did the chief of David&#39;s captains kill?</a></td>
+            <td><a href="/was-abraham-justified-by-faith-or-works-sab.html">2 Was Abraham justified by faith or works?</a></td>
+            <td><a href="/how-many-sons-did-abraham-have-sab.html">3 How many sons did Abraham have?</a></td>
+            <td><a href="/abiathars-fatherabiathars-father-sab.html">4 Abiathar&#39;s FatherAbiathar&#39;s Father</a></td></tr><tr>
+            <td><a href="/who-was-abijams-mother-sab.html">5 Who was Abijam&#39;s mother?</a></td>
+            <td><a href="/how-were-abijam-and-asa-related-sab.html">6 How were Abijam and Asa related?</a></td>
+            <td><a href="/how-long-was-the-ark-of-the-covenant-at-abinadabs-house-sab.html">7 How long was the ark of the covenant at Abinadab&#39;s house?</a></td>
+            <td><a href="/how-old-was-abram-when-ishmael-was-born-sab.html">8 How old was Abram when Ishmael was born?</a></td></tr><tr>
+            <td><a href="/how-many-sons-did-absalom-have-sab.html">9 How many sons did Absalom have?</a></td>
+            <td><a href="/when-did-absalom-rebel-against-david-sab.html">10 When did Absalom rebel against David?</a></td>
+            <td><a href="/the-two-contradictory-creation-accounts-sab.html">11 The two contradictory creation accounts.</a></td>
+            <td><a href="/who-was-achans-father-sab.html">12 Who Was Achan&#39;s father?</a></td></tr><tr>
+            <td><a href="/the-children-of-adin-sab.html">13 The children of Adin</a></td>
+            <td><a href="/the-children-of-adonikam-sab.html">14 The children of Adonikam</a></td>
+            <td><a href="/how-should-adulterers-be-punished-sab.html">15 How should adulterers be punished?</a></td>
+            <td><a href="/is-is-wrong-to-have-sex-outside-of-marriage-sab.html">16 Is is wrong to have sex outside of marriage?</a></td></tr><tr>
+            <td><a href="/was-haman-an-agagite-sab.html">17 Was Haman an Agagite??</a></td>
+            <td><a href="/was-ahaz-buried-with-his-fathers-sab.html">18 Was Ahaz buried with his fathers?</a></td>
+            <td><a href="/when-did-ahaziah-begin-to-reign-sab.html">19 When did Ahaziah begin to reign?</a></td>
+            <td><a href="/how-old-was-ahaziah-when-he-began-to-reign-sab.html">20 How old was Ahaziah when he began to reign?</a></td></tr><tr>
+            <td><a href="/did-the-city-of-ai-exist-after-joshua-destroyed-it-sab.html">21 Did the city of Ai exist after Joshua destroyed it?</a></td>
+            <td><a href="/to-whom-were-the-cities-of-aijalon-and-gathrimmon-given-sab.html">22 To whom were the cities of Aijalon and Gathrimmon given?</a></td>
+            <td><a href="/does-god-want-some-to-go-to-hell-sab.html">23 Does God want some to go to hell?</a></td>
+            <td><a href="/did-jesus-tell-his-disciples-everything-sab.html">24 Did Jesus tell his disciples everything?</a></td></tr><tr>
+            <td><a href="/was-david-alone-when-asking-for-the-holy-bread-at-nob-sab.html">25 Was David alone when asking for the holy bread at Nob?</a></td>
+            <td><a href="/did-saul-and-samuel-kill-all-the-amalekites-sab.html">26 Did Saul and Samuel kill all the Amalekites?</a></td>
+            <td><a href="/who-was-amasas-father-sab.html">27 Who was Amasa&#39;s father?</a></td>
+            <td><a href="/how-should-the-ammonites-be-treated-sab.html">28 How should the Ammonites be treated?</a></td></tr><tr>
+            <td><a href="/who-was-anah-sab.html">29 Who was Anah?</a></td>
+            <td><a href="/who-drove-the-anakim-from-hebron-sab.html">30 Who drove the Anakim from Hebron?</a></td>
+            <td><a href="/how-long-does-gods-anger-last-sab.html">31 How long does God&#39;s anger last?</a></td>
+            <td><a href="/from-what-were-the-animals-created-sab.html">32 From what were the animals created?</a></td></tr><tr>
+            <td><a href="/how-did-antiochus-die-sab.html">33 How did Antiochus die?</a></td>
+            <td><a href="/what-were-the-names-of-the-apostles-sab.html">34 What were the names of the apostles?</a></td>
+            <td><a href="/where-did-jesus-first-appear-after-the-resurrection-sab.html">35 Where did Jesus first appear after the resurrection?</a></td>
+            <td><a href="/the-children-of-arah-sab.html">36 The children of Arah</a></td></tr><tr>
+            <td><a href="/what-was-in-the-ark-of-the-covenant-sab.html">37 What was in the Ark of the Covenant?</a></td>
+            <td><a href="/was-asa-perfect-sab.html">38 Was Asa perfect?</a></td>
+            <td><a href="/did-asa-remove-the-high-places-sab.html">39 Did Asa remove the high places?</a></td>
+            <td><a href="/the-children-of-asaph-sab.html">40 The children of Asaph</a></td></tr><tr>
+            <td><a href="/when-did-jesus-ascend-into-heaven-sab.html">41 When did Jesus ascend into heaven?</a></td>
+            <td><a href="/did-peter-ask-jesus-where-he-was-going-sab.html">42 Did Peter ask Jesus where he was going?</a></td>
+            <td><a href="/on-what-did-jesus-ride-into-jerusalem-sab.html">43 On what did Jesus ride into Jerusalem?</a></td>
+            <td><a href="/is-the-day-of-the-lord-at-hand-sab.html">44 Is the day of the Lord at hand?</a></td></tr><tr>
+            <td><a href="/the-children-of-azgad-sab.html">45 The children of Azgad</a></td>
+            <td><a href="/who-was-noahs-youngest-son-sab.html">46 Who was Noah&#39;s youngest son?</a></td>
+            <td><a href="/how-many-languages-were-there-before-the-tower-of-babel-was-built-sab.html">47 How many languages were there before the Tower of Babel was built?</a></td>
+            <td><a href="/how-long-was-the-babylonian-captivity-sab.html">48 How long was the Babylonian Captivity?</a></td></tr><tr>
+            <td><a href="/the-children-of-bani-sab.html">49 The children of Bani</a></td>
+            <td><a href="/in-whose-name-is-baptism-to-be-performed-sab.html">50 In whose name is baptism to be performed?</a></td>
+            <td><a href="/did-jesus-baptize-anyone-sab.html">51 Did Jesus baptize anyone?</a></td>
+            <td><a href="/did-jesus-tell-his-apostles-to-go-barefoot-and-without-a-staff-sab.html">52 Did Jesus tell his apostles to go barefoot and without a staff?</a></td></tr><tr>
+            <td><a href="/who-was-to-blame-for-original-sin-sab.html">53 Who was to blame for original sin?</a></td>
+            <td><a href="/who-was-bashemaths-father-sab.html">54 Who was Bashemath&#39;s father?</a></td>
+            <td><a href="/what-was-the-volume-of-the-molten-sea-sab.html">55 What was the volume of the molten sea?</a></td>
+            <td><a href="/the-children-of-bebai-sab.html">56 The children of Bebai</a></td></tr><tr>
+            <td><a href="/when-did-saul-become-davids-enemy-sab.html">57 When did Saul become David&#39;s enemy?</a></td>
+            <td><a href="/who-named-beersheba-sab.html">58 Who named Beersheba?</a></td>
+            <td><a href="/where-did-joseph-and-mary-live-before-the-birth-of-jesus-sab.html">59 Where did Joseph and Mary live before the birth of Jesus?</a></td>
+            <td><a href="/should-we-believe-everything-sab.html">60 Should we believe everything?</a></td></tr><tr>
+            <td><a href="/how-many-believers-were-there-at-the-time-of-the-ascension-sab.html">61 How many believers were there at the time of the ascension?</a></td>
+            <td><a href="/how-old-was-ben-when-his-clan-migrated-to-egypt-sab.html">62 How old was Ben when his clan migrated to Egypt?</a></td>
+            <td><a href="/who-were-the-sons-of-benjamin-sab.html">63 Who were the sons of Benjamin?</a></td>
+            <td><a href="/were-naaman-and-ard-the-sons-or-the-grandsons-of-benjamin-sab.html">64 Were Naaman and Ard the sons or the grandsons of Benjamin??</a></td></tr><tr>
+            <td><a href="/who-asked-for-the-best-seats-in-heaven-sab.html">65 Who asked for the best seats in heaven?</a></td>
+            <td><a href="/when-did-jacob-rename-luz-to-bethel-sab.html">66 When did Jacob rename Luz to Bethel?</a></td>
+            <td><a href="/the-children-of-bethlehem-sab.html">67 The children of Bethlehem</a></td>
+            <td><a href="/where-did-jesus-cure-the-blind-man-sab.html">68 Where did Jesus cure the blind man?</a></td></tr><tr>
+            <td><a href="/the-children-of-bezai-sab.html">69 The children of Bezai</a></td>
+            <td><a href="/the-children-of-bigvai-sab.html">70 The children of Bigvai</a></td>
+            <td><a href="/who-is-the-most-blessed-woman-sab.html">71 Who is the most blessed woman?</a></td>
+            <td><a href="/who-makes-people-deaf-or-blind-sab.html">72 Who makes people deaf or blind?</a></td></tr><tr>
+            <td><a href="/how-many-blind-men-were-healed-near-jericho-sab.html">73 How many blind men were healed near Jericho?</a></td>
+            <td><a href="/does-the-blood-of-animal-sacrifices-take-away-sin-sab.html">74 Does the blood of animal sacrifices take away sin?</a></td>
+            <td><a href="/should-we-bear-each-others-burdens-sab.html">75 Should we bear each other&#39;s burdens?</a></td>
+            <td><a href="/who-buried-jesus-sab.html">76 Who buried Jesus?</a></td></tr><tr>
+            <td><a href="/on-what-day-did-the-temple-burn-sab.html">77 On what day did the temple burn?</a></td>
+            <td><a href="/did-god-command-the-israelites-to-make-him-burnt-offerings-sab.html">78 Did God command the Israelites to make him burnt offerings?</a></td>
+            <td><a href="/who-appeared-to-moses-in-the-burning-bush-sab.html">79 Who appeared to Moses in the burning bush?</a></td>
+            <td><a href="/what-became-of-cain-sab.html">80 What became of Cain?</a></td></tr><tr>
+            <td><a href="/was-jesus-taken-to-caiaphas-or-annas-first-sab.html">81 Was Jesus taken to Caiaphas or Annas first?</a></td>
+            <td><a href="/will-those-who-call-on-the-lord-be-delivered-sab.html">82 Will those who call on the Lord be delivered?</a></td>
+            <td><a href="/can-god-do-anything-sab.html">83 Can God do anything?</a></td>
+            <td><a href="/how-long-was-the-egyptian-captivity-sab.html">84 How long was the Egyptian Captivity?</a></td></tr><tr>
+            <td><a href="/does-god-prefer-castrated-me-sab.html">85 Does God prefer castrated me?</a></td>
+            <td><a href="/is-casting-out-devils-a-sign-of-a-true-christian-sab.html">86 Is casting out devils a sign of a true Christian?</a></td>
+            <td><a href="/did-god-kill-all-the-egyptian-cattle-in-the-sixth-plague-sab.html">87 Did God kill all the Egyptian cattle in the sixth plague?</a></td>
+            <td><a href="/is-it-ok-to-take-a-census-sab.html">88 Is it OK to take a census?</a></td></tr><tr>
+            <td><a href="/centurions-story-sab.html">89 Centurion&#39;s Story</a></td>
+            <td><a href="/what-did-the-centurion-call-jesus-when-he-died-sab.html">90 What did the Centurion call Jesus when he died?</a></td>
+            <td><a href="/how-high-was-the-chapiter-sab.html">91 How high was the chapiter?</a></td>
+            <td><a href="/how-many-men-did-david-kill-sab.html">92 How many men did David kill?</a></td></tr><tr>
+            <td><a href="/is-childbearing-sinful-sab.html">93 Is childbearing sinful?</a></td>
+            <td><a href="/is-it-a-good-thing-to-be-childish-sab.html">94 Is it a good thing to be childish?</a></td>
+            <td><a href="/how-did-jesus-respond-when-questioned-by-the-high-priest-sab.html">95 How did Jesus respond when questioned by the high priest?</a></td>
+            <td><a href="/is-circumcison-required-sab.html">96 Is circumcison required?</a></td></tr><tr>
+            <td><a href="/to-whom-were-the-cities-of-exhtaol-and-zoreah-given-sab.html">97 To whom were the cities of Exhtaol and Zoreah given?</a></td>
+            <td><a href="/did-the-cock-crow-before-or-after-peters-denial-sab.html">98 Did the cock crow before or after Peter&#39;s denial?</a></td>
+            <td><a href="/what-color-was-jesus-robe-sab.html">99 What color was Jesus&#39; robe?</a></td>
+            <td><a href="/did-jesus-forewarn-the-apostles-of-his-death-and-resurrection-sab.html">100 Did Jesus forewarn the apostles of his death and resurrection?</a></td></tr><tr>
+            <td><a href="/is-god-the-author-of-confusion-sab.html">101 Is God the author of confusion?</a></td>
+            <td><a href="/is-it-ok-to-covet-sab.html">102 Is it OK to covet?</a></td>
+            <td><a href="/did-jesus-say-before-the-cock-crow-or-before-the-cock-crows-twice-sab.html">103 Did Jesus say before the cock crow or before the cock crows twice?</a></td>
+            <td><a href="/did-jesus-ask-god-to-save-him-from-crucifixion-sab.html">104 Did Jesus ask God to save him from crucifixion?</a></td></tr><tr>
+            <td><a href="/is-it-ok-to-curse-people-sab.html">105 Is it OK to curse people?</a></td>
+            <td><a href="/will-god-curse-the-earth-sab.html">106 Will God curse the earth?</a></td>
+            <td><a href="/are-those-who-obey-the-law-cursed-sab.html">107 Are those who obey the law cursed?</a></td>
+            <td><a href="/when-did-the-temple-curtain-rip-sab.html">108 When did the Temple curtain rip?</a></td></tr><tr>
+            <td><a href="/who-carried-jesus-cross-sab.html">109 Who carried Jesus&#39; cross?</a></td>
+            <td><a href="/when-was-the-city-of-dan-named-sab.html">110 When was the city of Dan named?</a></td>
+            <td><a href="/generations-from-david-to-the-babylonian-captivity-sab.html">111 Generations from David to the Babylonian Captivity</a></td>
+            <td><a href="/how-did-david-kill-goliath-sab.html">112 How did David kill Goliath?</a></td></tr><tr>
+            <td><a href="/davids-sons-sab.html">113 David&#39;s sons</a></td>
+            <td><a href="/did-david-sin-sab.html">114 Did David sin?</a></td>
+            <td><a href="/which-sons-of-david-were-born-in-jerusalem-sab.html">115 Which sons of David were born in Jerusalem?</a></td>
+            <td><a href="/from-which-of-davids-sons-was-jesus-descended-sab.html">116 From which of David&#39;s sons was Jesus descended?</a></td></tr><tr>
+            <td><a href="/when-did-the-women-or-woman-arrive-at-the-sepulchre-sab.html">117 When did the women (or woman) arrive at the sepulchre?</a></td>
+            <td><a href="/is-death-final-sab.html">118 Is death final?</a></td>
+            <td><a href="/the-children-of-delaiah-sab.html">119 The children of Delaiah</a></td>
+            <td><a href="/to-whom-did-peter-deny-knowing-jesus-sab.html">120 To whom did Peter deny knowing Jesus?</a></td></tr><tr>
+            <td><a href="/who-destroyed-sodom-and-gomorrah-sab.html">121 Who destroyed Sodom and Gomorrah?</a></td>
+            <td><a href="/can-the-devil-capture-us-at-will-sab.html">122 Can the devil capture us at will?</a></td>
+            <td><a href="/is-the-devil-tied-up-or-free-to-roam-sab.html">123 Is the devil tied up or free to roam?</a></td>
+            <td><a href="/who-can-cast-out-devils-in-the-name-of-jesus-sab.html">124 Who can cast out devils in the name of Jesus?</a></td></tr><tr>
+            <td><a href="/where-did-the-devils-ask-not-to-go-sab.html">125 Where did the devils ask not to go?</a></td>
+            <td><a href="/does-god-desire-animal-sacrifices-sab.html">126 Does God desire animal sacrifices?</a></td>
+            <td><a href="/must-everyone-die-sab.html">127 Must everyone die?</a></td>
+            <td><a href="/should-believers-discuss-their-faith-with-non-believers-sab.html">128 Should believers discuss their faith with non-believers?</a></td></tr><tr>
+            <td><a href="/is-divorce-ever-permissible-sab.html">129 Is divorce ever permissible?</a></td>
+            <td><a href="/does-anyone-do-good-sab.html">130 Does anyone do good?</a></td>
+            <td><a href="/who-put-the-robe-on-jesus-sab.html">131 Who put the robe on Jesus?</a></td>
+            <td><a href="/did-jesus-drink-on-the-cross-sab.html">132 Did Jesus drink on the cross?</a></td></tr><tr>
+            <td><a href="/when-did-the-earth-dry-after-the-flood-sab.html">133 When did the earth dry after the flood?</a></td>
+            <td><a href="/does-god-dwell-in-darkness-or-in-light-sab.html">134 Does God dwell in darkness or in light?</a></td>
+            <td><a href="/will-the-earth-last-forever-sab.html">135 Will the earth last forever?</a></td>
+            <td><a href="/what-kind-of-animals-may-we-eat-sab.html">136 What kind of animals may we eat?</a></td></tr><tr>
+            <td><a href="/how-should-the-edomites-be-treated-sab.html">137 How should the Edomites be treated?</a></td>
+            <td><a href="/may-a-eunuch-enter-the-congregation-of-the-lord-sab.html">138 May a eunuch enter the congregation of the Lord?</a></td>
+            <td><a href="/did-lots-daughters-think-god-had-killed-every-man-except-lot-sab.html">139 Did Lot&#39;s daughters think God had killed every man except Lot?</a></td>
+            <td><a href="/does-the-gospel-of-luke-contain-everything-that-jesus-did-sab.html">140 Does the gospel of Luke contain everything that Jesus did?</a></td></tr><tr>
+            <td><a href="/did-jesus-mary-and-joseph-go-to-egypt-or-nazareth-sab.html">141 Did Jesus, Mary, and Joseph go to Egypt or Nazareth?</a></td>
+            <td><a href="/how-many-disciples-did-jesus-appear-to-in-his-first-post-resurrection-appearance-sab.html">142 How many disciples did Jesus appear to in his first post resurrection appearance?</a></td>
+            <td><a href="/did-the-eleven-disciples-believe-the-two-men-sab.html">143 Did the eleven disciples believe the two men?</a></td>
+            <td><a href="/whom-did-elhanan-kill-sab.html">144 Whom did Elhanan kill?</a></td></tr><tr>
+            <td><a href="/was-john-the-baptist-elijah-sab.html">145 Was John the Baptist Elijah?</a></td>
+            <td><a href="/when-will-the-end-of-the-world-come-sab.html">146 When will the end of the world come?</a></td>
+            <td><a href="/how-should-we-treat-our-enemies-sab.html">147 How should we treat our enemies?</a></td>
+            <td><a href="/has-anyone-ever-ascended-into-heaven-sab.html">148 Has anyone ever ascended into heaven?</a></td></tr><tr>
+            <td><a href="/did-enoch-die-sab.html">149 Did Enoch die?</a></td>
+            <td><a href="/was-enoch-the-sixth-or-the-seventh-from-adam-sab.html">150 Was Enoch the sixth or the seventh from Adam?</a></td>
+            <td><a href="/will-ephraim-return-to-egypt-sab.html">151 Will Ephraim return to Egypt?</a></td>
+            <td><a href="/when-was-eve-created-sab.html">152 When was Eve created?</a></td></tr><tr>
+            <td><a href="/is-everyone-descended-from-adam-and-eve-sab.html">153 Is everyone descended from Adam and Eve?</a></td>
+            <td><a href="/is-god-the-creator-of-evil-sab.html">154 Is God the creator of evil?</a></td>
+            <td><a href="/do-evildoers-prosper-sab.html">155 Do evildoers prosper?</a></td>
+            <td><a href="/did-moses-see-god-face-to-face-sab.html">156 Did Moses see God face to face?</a></td></tr><tr>
+            <td><a href="/is-salvation-by-faith-alone-sab.html">157 Is Salvation by faith alone?</a></td>
+            <td><a href="/were-the-men-with-paul-knocked-to-the-ground-sab.html">158 Were the men with Paul knocked to the ground?</a></td>
+            <td><a href="/is-it-possible-to-fall-from-grace-sab.html">159 Is it possible to fall from grace?</a></td>
+            <td><a href="/how-many-years-of-famine-sab.html">160 How many years of famine?</a></td></tr><tr>
+            <td><a href="/is-is-ok-to-call-your-father-or-anyone-else-father-sab.html">161 Is is OK to call your father (or anyone else) father?</a></td>
+            <td><a href="/did-moses-fear-the-king-sab.html">162 Did Moses fear the king?</a></td>
+            <td><a href="/should-we-look-for-signs-in-the-heavens-sab.html">163 Should we look for signs in the heavens?</a></td>
+            <td><a href="/should-we-fear-god-sab.html">164 Should we fear God?</a></td></tr><tr>
+            <td><a href="/who-bought-the-potters-field-sab.html">165 Who bought the potter&#39;s field?</a></td>
+            <td><a href="/when-did-the-cursed-fig-tree-die-sab.html">166 When did the cursed fig tree die?</a></td>
+            <td><a href="/when-did-jesus-curse-the-fig-tree-sab.html">167 When did Jesus curse the fig tree?</a></td>
+            <td><a href="/was-jesus-the-first-to-rise-from-the-dead-sab.html">168 Was Jesus the first to rise from the dead?</a></td></tr><tr>
+            <td><a href="/to-whom-did-jesus-make-his-first-post-resurrection-appearance-sab.html">169 To whom did Jesus make his first post-resurrection appearance?</a></td>
+            <td><a href="/how-long-was-the-ark-afloat-sab.html">170 How long was the ark afloat?</a></td>
+            <td><a href="/how-long-did-the-flood-last-sab.html">171 How long did the flood last?</a></td>
+            <td><a href="/did-everyone-die-in-the-flood-sab.html">172 Did everyone die in the flood?</a></td></tr><tr>
+            <td><a href="/will-the-righteous-flourish-sab.html">173 Will the righteous flourish?</a></td>
+            <td><a href="/which-flying-creeping-things-may-we-eat-sab.html">174 Which flying creeping things may we eat?</a></td>
+            <td><a href="/is-it-ok-to-call-someone-a-fool-sab.html">175 Is it OK to call someone a fool?</a></td>
+            <td><a href="/is-it-good-to-be-foolish-sab.html">176 Is it good to be foolish?</a></td></tr><tr>
+            <td><a href="/who-forces-non-believers-to-disbelieve-sab.html">177 Who forces non-believers to disbelieve?</a></td>
+            <td><a href="/how-many-philistine-foreskins-did-david-buy-his-first-wife-with-sab.html">178 How many Philistine foreskins did David buy his first wife with?</a></td>
+            <td><a href="/does-god-forgive-sins-sab.html">179 Does God forgive sins?</a></td>
+            <td><a href="/how-many-generations-from-abraham-to-jesus-sab.html">180 How many generations from Abraham to Jesus?</a></td></tr><tr>
+            <td><a href="/can-god-be-found-sab.html">181 Can God be found?</a></td>
+            <td><a href="/from-what-were-the-fowls-created-sab.html">182 From what were the fowls created?</a></td>
+            <td><a href="/do-humans-have-free-will-sab.html">183 Do humans have free will?</a></td>
+            <td><a href="/were-the-disciples-frightened-or-gladened-when-they-saw-jesus-sab.html">184 Were the disciples frightened or gladened when they saw Jesus?</a></td></tr><tr>
+            <td><a href="/does-god-ever-get-furious-sab.html">185 Does God ever get furious?</a></td>
+            <td><a href="/who-gave-the-law-to-moses-sab.html">186 Who gave the law to Moses?</a></td>
+            <td><a href="/did-god-give-gehazi-leprosy-sab.html">187 Did God give Gehazi leprosy?</a></td>
+            <td><a href="/genealogy-of-jesus-sab.html">188 Genealogy of Jesus</a></td></tr><tr>
+            <td><a href="/genealogy-of-jesus-mt-1-vs-1-chr-sab.html">189 Genealogy of Jesus (Mt.1 vs 1 Chr)</a></td>
+            <td><a href="/when-was-the-holy-ghost-given-sab.html">190 When was the Holy Ghost given?</a></td>
+            <td><a href="/does-god-lie-sab.html">191 Does God lie?</a></td>
+            <td><a href="/does-god-love-everyone-sab.html">192 Does God love everyone?</a></td></tr><tr>
+            <td><a href="/does-god-know-what-is-everyones-heart-sab.html">193 Does God know what is everyone&#39;s heart?</a></td>
+            <td><a href="/how-many-gods-are-there-sab.html">194 How many gods are there?</a></td>
+            <td><a href="/are-we-all-gods-children-sab.html">195 Are we all God&#39;s children?</a></td>
+            <td><a href="/does-god-work-on-the-sabbath-sab.html">196 Does God work on the Sabbath?</a></td></tr><tr>
+            <td><a href="/gold-silver-and-garments-sab.html">197 Gold, silver, and garments</a></td>
+            <td><a href="/who-killed-goliath-sab.html">198 Who killed Goliath?</a></td>
+            <td><a href="/is-anyone-good-sab.html">199 Is anyone good?</a></td>
+            <td><a href="/who-was-the-greatest-jesus-solomon-or-john-the-baptist-sab.html">200 Who was the greatest: Jesus, Solomon, or John the Baptist?</a></td></tr><tr>
+            <td><a href="/is-it-ok-for-men-to-have-long-hair-sab.html">201 Is it OK for men to have long hair?</a></td>
+            <td><a href="/who-was-noahs-youngest-son-sab.html">202 Who was Noah&#39;s youngest son?</a></td>
+            <td><a href="/is-it-good-to-be-happy-sab.html">203 Is it good to be happy?</a></td>
+            <td><a href="/was-mary-magdalen-happy-or-sad-when-she-saw-the-risen-jesus-sab.html">204 Was Mary Magdalen happy or sad when she saw the risen Jesus?</a></td></tr><tr>
+            <td><a href="/who-hardened-the-pharaohs-heart-sab.html">205 Who hardened the Pharaoh&#39;s heart?</a></td>
+            <td><a href="/should-we-follow-our-own-hearts-sab.html">206 Should we follow our own hearts?</a></td>
+            <td><a href="/when-was-heaven-created-sab.html">207 When was heaven created?</a></td>
+            <td><a href="/does-hell-exist-sab.html">208 Does Hell exist?</a></td></tr><tr>
+            <td><a href="/does-god-help-in-times-of-need-sab.html">209 Does God help in times of need?</a></td>
+            <td><a href="/who-was-hemans-father-sab.html">210 Who was Heman&#39;s father?</a></td>
+            <td><a href="/did-herod-think-jesus-was-john-the-babptist-sab.html">211 Did Herod think Jesus was John the Babptist?</a></td>
+            <td><a href="/where-did-josephs-brothers-find-the-hidden-money-sab.html">212 Where did Joseph&#39;s brothers find the hidden money?</a></td></tr><tr>
+            <td><a href="/how-many-talents-of-gold-did-hiram-send-solomon-sab.html">213 How many talents of gold did Hiram send Solomon?</a></td>
+            <td><a href="/is-only-god-holy-sab.html">214 Is only God holy?</a></td>
+            <td><a href="/who-sent-the-holy-ghost-sab.html">215 Who sent the Holy Ghost?</a></td>
+            <td><a href="/how-should-homosexuals-be-treated-sab.html">216 How should homosexuals be treated?</a></td></tr><tr>
+            <td><a href="/where-did-aaron-die-sab.html">217 Where did Aaron die?</a></td>
+            <td><a href="/how-many-horsemen-did-david-take-sab.html">218 How many horsemen did David take?</a></td>
+            <td><a href="/when-at-what-time-of-day-was-jesus-crucified-sab.html">219 When (at what time of day) was Jesus Crucified?</a></td>
+            <td><a href="/does-god-approve-of-human-sacrifice-sab.html">220 Does God approve of human sacrifice?</a></td></tr><tr>
+            <td><a href="/were-humans-created-before-or-after-the-other-animals-sab.html">221 Were humans created before or after the other animals?</a></td>
+            <td><a href="/if-a-husband-believes-is-his-wife-saved-also-sab.html">222 If a husband believes, is his wife saved also?</a></td>
+            <td><a href="/which-tribe-was-hyram-from-sab.html">223 Which tribe was Hyram from?</a></td>
+            <td><a href="/was-zechariah-iddos-son-or-grandson-sab.html">224 Was Zechariah Iddo&#39;s son or grandson?</a></td></tr><tr>
+            <td><a href="/is-it-ok-to-make-images-sab.html">225 Is it OK to make images?</a></td>
+            <td><a href="/which-came-first-the-calling-of-peter-and-andrew-or-the-imprisonment-of-john-the-baptist-sab.html">226 Which came first: the calling of Peter and Andrew or the imprisonment of
+John the Baptist?</a></td>
+            <td><a href="/is-incest-forbidden-sab.html">227 Is incest forbidden?</a></td>
+            <td><a href="/are-we-punished-for-the-sins-of-others-sab.html">228 Are we punished for the sins of others?</a></td></tr><tr>
+            <td><a href="/did-saul-inquire-of-the-lord-sab.html">229 Did Saul inquire of the Lord?</a></td>
+            <td><a href="/were-the-men-or-angels-inside-or-outside-the-tomb-when-the-women-arrived-sab.html">230 Were the men or angels inside or outside the tomb when the women arrived?</a></td>
+            <td><a href="/will-god-destroy-those-that-intermarry-sab.html">231 Will God destroy those that intermarry?</a></td>
+            <td><a href="/can-god-stop-iron-chariots-sab.html">232 Can God stop iron chariots?</a></td></tr><tr>
+            <td><a href="/how-old-was-ishmael-sab.html">233 How old was Ishmael?</a></td>
+            <td><a href="/when-was-king-jabin-killed-sab.html">234 When was King Jabin killed?</a></td>
+            <td><a href="/who-bought-the-sepulchre-in-sechem-from-the-sons-of-hamor-sab.html">235 Who bought the sepulchre in Sechem from the sons of Hamor?</a></td>
+            <td><a href="/where-was-jacob-buried-sab.html">236 Where was Jacob buried?</a></td></tr><tr>
+            <td><a href="/how-many-were-in-jacobs-family-when-they-came-into-egypt-sab.html">237 How many were in Jacob&#39;s family when they came into Egypt?</a></td>
+            <td><a href="/was-jairus-daughter-alive-when-jesus-was-approached-sab.html">238 Was Jairus&#39; daughter alive when Jesus was approached?</a></td>
+            <td><a href="/did-jeconiah-have-any-sons-sab.html">239 Did Jeconiah have any sons?</a></td>
+            <td><a href="/was-jeconiah-the-son-or-grandson-of-josiah-sab.html">240 Was Jeconiah the son or grandson of Josiah?</a></td></tr><tr>
+            <td><a href="/when-did-jehoash-become-king-of-israel-sab.html">241 When did Jehoash become king of Israel?</a></td>
+            <td><a href="/how-long-did-jehoash-reign-sab.html">242 How long did Jehoash reign?</a></td>
+            <td><a href="/how-old-was-jehoachin-when-he-began-to-reign-sab.html">243 How old was Jehoachin when he began to reign?</a></td>
+            <td><a href="/who-succeeded-jehoiakim-as-king-sab.html">244 Who succeeded Jehoiakim as king?</a></td></tr><tr>
+            <td><a href="/did-jehoiakim-die-in-babylon-or-near-jerusalem-sab.html">245 Did Jehoiakim die in Babylon or near Jerusalem?</a></td>
+            <td><a href="/did-jehoshaphat-remove-the-high-places-sab.html">246 Did Jehoshaphat remove the high places?</a></td>
+            <td><a href="/did-abraham-know-gods-name-sab.html">247 Did Abraham know God&#39;s name?</a></td>
+            <td><a href="/was-jehu-the-son-or-grandson-of-numshi-sab.html">248 Was Jehu the son or grandson of Numshi?</a></td></tr><tr>
+            <td><a href="/when-was-the-blind-man-or-men-healed-sab.html">249 When was the blind man (or men) healed?</a></td>
+            <td><a href="/did-paul-go-to-jerusalem-from-damascus-immediately-after-his-conversion-sab.html">250 Did Paul go to Jerusalem from Damascus immediately after his conversion?</a></td>
+            <td><a href="/how-many-sons-did-jesse-have-sab.html">251 How many sons did Jesse have?</a></td>
+            <td><a href="/when-was-jesus-born-sab.html">252 When was Jesus born?</a></td></tr><tr>
+            <td><a href="/was-joseph-the-father-of-jesus-sab.html">253 Was Joseph the father of Jesus?</a></td>
+            <td><a href="/did-jesus-know-everything-sab.html">254 Did Jesus know everything?</a></td>
+            <td><a href="/did-jesus-bear-witness-sab.html">255 Did Jesus bear witness?</a></td>
+            <td><a href="/what-will-happen-to-jews-when-they-die-sab.html">256 What will happen to Jews when they die?</a></td></tr><tr>
+            <td><a href="/will-there-be-many-jews-sab.html">257 Will there be many Jews?</a></td>
+            <td><a href="/what-was-jesus-h-christs-real-name-sab.html">258 What was Jesus H. Christ&#39;s real name?</a></td>
+            <td><a href="/did-god-commend-or-condemn-jehu-sab.html">259 Did God commend or condemn Jehu?</a></td>
+            <td><a href="/where-was-joash-buried-sab.html">260 Where was Joash buried?</a></td></tr><tr>
+            <td><a href="/who-brought-evil-on-job-sab.html">261 Who brought evil on Job?</a></td>
+            <td><a href="/who-cast-jonah-into-the-sea-sab.html">262 Who cast Jonah into the sea?</a></td>
+            <td><a href="/who-was-jesus-grandfather-on-his-fathers-side-sab.html">263 Who was Jesus&#39; grandfather on his father&#39;s side?</a></td>
+            <td><a href="/where-did-josiah-die-sab.html">264 Where did Josiah die?</a></td></tr><tr>
+            <td><a href="/how-did-king-josiah-die-sab.html">265 How did King Josiah die?</a></td>
+            <td><a href="/how-long-did-jotham-reign-sab.html">266 How long did Jotham reign?</a></td>
+            <td><a href="/how-did-judas-die-sab.html">267 How did Judas die?</a></td>
+            <td><a href="/did-judas-identify-jesus-with-a-kiss-sab.html">268 Did Judas identify Jesus with a kiss?</a></td></tr><tr>
+            <td><a href="/to-judge-or-not-to-judge-sab.html">269 To judge or not to judge.</a></td>
+            <td><a href="/does-jesus-judge-people-sab.html">270 Does Jesus judge people?</a></td>
+            <td><a href="/has-there-ever-been-a-just-person-sab.html">271 Has there ever been a just person?</a></td>
+            <td><a href="/is-anyone-justified-sab.html">272 Is anyone justified?</a></td></tr><tr>
+            <td><a href="/was-keturah-abrahams-wife-or-concubine-sab.html">273 Was Keturah Abraham&#39;s wife or concubine?</a></td>
+            <td><a href="/is-it-ok-to-kill-sab.html">274 Is it OK to kill?</a></td>
+            <td><a href="/why-did-god-reject-saul-as-king-sab.html">275 Why did God reject Saul as king?</a></td>
+            <td><a href="/who-was-the-father-of-kish-sab.html">276 Who was the father of Kish?</a></td></tr><tr>
+            <td><a href="/does-god-know-and-see-everything-sab.html">277 Does God know and see everything?</a></td>
+            <td><a href="/who-was-korah-sab.html">278 Who was Korah?</a></td>
+            <td><a href="/did-god-burn-to-death-all-of-korahs-children-sab.html">279 Did God burn to death all of Korah&#39;s children?</a></td>
+            <td><a href="/who-was-labans-father-sab.html">280 Who was Laban&#39;s father?</a></td></tr><tr>
+            <td><a href="/what-were-the-last-words-of-jesus-sab.html">281 What were the last words of Jesus?</a></td>
+            <td><a href="/should-we-obey-human-or-divine-law-sab.html">282 Should we obey human or divine law?</a></td>
+            <td><a href="/is-it-ok-to-lie-sab.html">283 Is it OK to lie?</a></td>
+            <td><a href="/what-is-the-human-lifespan-sab.html">284 What is the human lifespan?</a></td></tr><tr>
+            <td><a href="/the-children-of-lod-sab.html">285 The children of Lod</a></td>
+            <td><a href="/has-the-sun-ever-stood-still-in-the-sky-for-24-hours-sab.html">286 Has the sun ever stood still in the sky for 24 hours?</a></td>
+            <td><a href="/who-is-the-lord-of-this-world-sab.html">287 Who is the Lord of this world?</a></td>
+            <td><a href="/was-lot-righteous-sab.html">288 Was Lot righteous?</a></td></tr><tr>
+            <td><a href="/should-we-love-or-hate-others-sab.html">289 Should we love or hate others?</a></td>
+            <td><a href="/how-many-soldiers-did-lysias-have-sab.html">290 How many soldiers did Lysias have?</a></td>
+            <td><a href="/how-many-of-lysias-footmen-were-killed-by-the-jews-sab.html">291 How many of Lysias&#39; footmen were killed by the Jews?</a></td>
+            <td><a href="/was-mahli-the-son-of-levi-sab.html">292 Was Mahli the son of Levi?</a></td></tr><tr>
+            <td><a href="/will-everyone-see-the-majesty-of-god-sab.html">293 Will everyone see the majesty of God?</a></td>
+            <td><a href="/was-david-a-man-of-war-before-he-fought-goliath-sab.html">294 Was David a man of war before he fought Goliath?</a></td>
+            <td><a href="/did-elisha-receive-elijahs-mantle-before-or-after-elijah-is-taken-up-into-heaven-sab.html">295 Did Elisha receive Elijah&#39;s mantle before or after Elijah is taken up
+into heaven?</a></td>
+            <td><a href="/is-marriage-a-good-thing-sab.html">296 Is marriage a good thing?</a></td></tr><tr>
+            <td><a href="/was-the-mary-the-mother-of-jesus-blessed-sab.html">297 Was The Mary (the mother of Jesus) blessed?</a></td>
+            <td><a href="/should-christians-be-concerned-with-material-things-sab.html">298 Should Christians be concerned with material things?</a></td>
+            <td><a href="/is-it-ok-to-eat-meat-sacrificed-to-other-gods-sab.html">299 Is it OK to eat meat sacrificed to other gods?</a></td>
+            <td><a href="/was-moses-meek-sab.html">300 Was Moses meek?</a></td></tr><tr>
+            <td><a href="/is-god-merciful-sab.html">301 Is God merciful?</a></td>
+            <td><a href="/how-many-children-did-michal-have-sab.html">302 How many children did Michal have?</a></td>
+            <td><a href="/did-the-israelites-kill-every-male-in-midian-sab.html">303 Did the Israelites kill every male in Midian?</a></td>
+            <td><a href="/how-many-did-god-kill-for-committing-whoredom-with-the-daughters-of-moab-sab.html">304 How many did God kill for &quot;committing whoredom with the daughters of Moab&quot;?</a></td></tr><tr>
+            <td><a href="/how-should-the-moabites-be-treated-sab.html">305 How should the Moabites be treated?</a></td>
+            <td><a href="/did-any-moabite-enter-the-congregation-of-the-lord-sab.html">306 Did any Moabite enter the congregation of the Lord?</a></td>
+            <td><a href="/is-money-good-or-bad-sab.html">307 Is money good or bad?</a></td>
+            <td><a href="/was-moses-in-good-mental-and-physical-health-at-age-120-sab.html">308 Was Moses in good mental and physical health at age 120?</a></td></tr><tr>
+            <td><a href="/who-was-moses-father-in-law-sab.html">309 Who was Moses&#39; father-in-law?</a></td>
+            <td><a href="/was-moses-a-good-speaker-sab.html">310 Was Moses a good speaker?</a></td>
+            <td><a href="/did-jesus-preach-his-first-sermon-on-a-mountain-or-a-plain-sab.html">311 Did Jesus preach his first sermon on a mountain or a plain?</a></td>
+            <td><a href="/what-is-gods-name-sab.html">312 What is God&#39;s name?</a></td></tr><tr>
+            <td><a href="/whats-new-sab.html">313 What&#39;s new?</a></td>
+            <td><a href="/recipe-for-the-new-moon-sacrifice-sab.html">314 Recipe for the new moon sacrifice</a></td>
+            <td><a href="/how-many-were-killed-in-nicanors-army-sab.html">315 How many were killed in Nicanor&#39;s army?</a></td>
+            <td><a href="/how-many-soldiers-were-in-nicanors-army-sab.html">316 How many soldiers were in Nicanor&#39;s army?</a></td></tr><tr>
+            <td><a href="/if-god-likes-you-will-everyone-else-like-you-too-sab.html">317 If God likes you, will everyone else like you too?</a></td>
+            <td><a href="/when-did-noah-enter-the-ark-sab.html">318 When did Noah enter the ark?</a></td>
+            <td><a href="/how-should-nonbelievers-be-treated-sab.html">319 How should nonbelievers be treated?</a></td>
+            <td><a href="/is-it-ok-to-take-oaths-sab.html">320 Is it OK to take oaths?</a></td></tr><tr>
+            <td><a href="/are-those-who-believe-jesus-is-the-christ-of-god-sab.html">321 Are those who believe Jesus is the Christ of God?</a></td>
+            <td><a href="/how-many-officers-did-solomon-have-sab.html">322 How many officers did Solomon have?</a></td>
+            <td><a href="/how-old-was-abraham-when-he-left-haran-sab.html">323 How old was Abraham when he left Haran?</a></td>
+            <td><a href="/was-the-tomb-opened-or-closed-when-the-women-arrived-sab.html">324 Was the tomb opened or closed when the women arrived?</a></td></tr><tr>
+            <td><a href="/are-the-laws-of-the-old-testament-still-binding-sab.html">325 Are the laws of the Old Testament still binding?</a></td>
+            <td><a href="/how-many-overseers-did-solomon-have-sab.html">326 How many overseers did Solomon have?</a></td>
+            <td><a href="/who-owns-the-earth-sab.html">327 Who owns the earth?</a></td>
+            <td><a href="/the-children-of-pahathmoab-sab.html">328 The children of Pahathmoab</a></td></tr><tr>
+            <td><a href="/how-should-parents-be-treated-sab.html">329 How should parents be treated?</a></td>
+            <td><a href="/how-many-days-is-unleaved-bread-to-be-eaten-sab.html">330 How many days is unleaved bread to be eaten?</a></td>
+            <td><a href="/when-was-jesus-crucified-sab.html">331 When was Jesus crucified?</a></td>
+            <td><a href="/did-paul-see-jesus-on-the-road-to-damascus-sab.html">332 Did Paul see Jesus on the road to Damascus?</a></td></tr><tr>
+            <td><a href="/did-paul-visit-all-of-the-disciples-when-he-went-to-jerusalem-after-his-conversion-sab.html">333 Did Paul visit all of the disciples when he went to Jerusalem after his conversion?</a></td>
+            <td><a href="/is-god-warlike-or-peaceful-sab.html">334 Is God warlike or peaceful?</a></td>
+            <td><a href="/is-the-law-of-god-perfect-sab.html">335 Is the law of God perfect?</a></td>
+            <td><a href="/is-it-ok-to-use-perfume-sab.html">336 Is it OK to use perfume?</a></td></tr><tr>
+            <td><a href="/who-wrote-the-pentateuch-sab.html">337 Who wrote the Pentateuch?</a></td>
+            <td><a href="/how-did-peter-find-out-that-jesus-was-the-messiah-sab.html">338 How did Peter find out that Jesus was the Messiah?</a></td>
+            <td><a href="/where-was-the-home-of-peter-and-andrew-sab.html">339 Where was the home of Peter and Andrew?</a></td>
+            <td><a href="/were-the-pharisees-baptised-by-john-sab.html">340 Were the Pharisees baptised by John?</a></td></tr><tr>
+            <td><a href="/can-women-be-church-leaders-sab.html">341 Can women be church leaders?</a></td>
+            <td><a href="/how-high-were-the-pillars-sab.html">342 How high were the pillars?</a></td>
+            <td><a href="/were-plants-created-before-or-after-humans-sab.html">343 Were plants created before or after humans?</a></td>
+            <td><a href="/should-we-try-to-please-others-sab.html">344 Should we try to please others?</a></td></tr><tr>
+            <td><a href="/the-children-of-the-porters-sab.html">345 The children of the porters</a></td>
+            <td><a href="/how-many-men-were-possessed-with-devils-sab.html">346 How many men were possessed with devils?</a></td>
+            <td><a href="/what-did-jesus-do-after-his-baptism-sab.html">347 What did Jesus do after his baptism?</a></td>
+            <td><a href="/how-much-power-did-jesus-have-sab.html">348 How much power did Jesus have?</a></td></tr><tr>
+            <td><a href="/do-christians-know-how-to-pray-sab.html">349 Do Christians know how to pray?</a></td>
+            <td><a href="/should-you-pray-for-everyone-sab.html">350 Should you pray for everyone?</a></td>
+            <td><a href="/when-david-fled-to-nob-what-was-the-priests-name-sab.html">351 When David fled to Nob, what was the priest&#39;s name?</a></td>
+            <td><a href="/on-what-day-of-the-month-was-jehoiachin-released-from-prison-sab.html">352 On what day of the month was Jehoiachin released from prison?</a></td></tr><tr>
+            <td><a href="/should-christians-pray-in-public-sab.html">353 Should Christians pray in public?</a></td>
+            <td><a href="/is-every-word-of-god-pure-sab.html">354 Is every word of God pure?</a></td>
+            <td><a href="/was-rahab-saved-by-faith-or-works-sab.html">355 Was Rahab saved by faith or works?</a></td>
+            <td><a href="/who-raised-jesus-from-the-dead-sab.html">356 Who raised Jesus from the dead?</a></td></tr><tr>
+            <td><a href="/ransom-for-many-or-ransom-for-all-sab.html">357 Ransom for many or ransom for all?</a></td>
+            <td><a href="/can-god-be-found-through-reason-alone-sab.html">358 Can God be found through reason alone?</a></td>
+            <td><a href="/did-mary-magdalene-recognize-jesus-when-he-first-appeared-to-her-sab.html">359 Did Mary Magdalene recognize Jesus when he first appeared to her?</a></td>
+            <td><a href="/should-we-rejoice-when-our-enemies-suffer-sab.html">360 Should we rejoice when our enemies suffer?</a></td></tr><tr>
+            <td><a href="/is-it-ok-for-a-divorced-woman-to-remarry-sab.html">361 Is it OK for a divorced woman to remarry?</a></td>
+            <td><a href="/should-we-rend-our-clothes-sab.html">362 Should we rend our clothes?</a></td>
+            <td><a href="/does-god-repent-sab.html">363 Does God repent?</a></td>
+            <td><a href="/does-god-respect-anyone-sab.html">364 Does God respect anyone?</a></td></tr><tr>
+            <td><a href="/did-both-thieves-revile-jesus-sab.html">365 Did both thieves revile Jesus?</a></td>
+            <td><a href="/is-wealth-a-sign-of-righteousness-or-of-wickedness-sab.html">366 Is wealth a sign of righteousness or of wickedness?</a></td>
+            <td><a href="/has-there-ever-been-a-righteous-person-sab.html">367 Has there ever been a righteous person?</a></td>
+            <td><a href="/does-righteousness-come-from-following-the-law-sab.html">368 Does righteousness come from following the Law?</a></td></tr><tr>
+            <td><a href="/is-it-necessary-to-keep-the-sabbath-sab.html">369 Is it necessary to keep the sabbath?</a></td>
+            <td><a href="/how-should-sabbath-breakers-be-punished-sab.html">370 How should Sabbath-breakers be punished?</a></td>
+            <td><a href="/who-may-offer-sacrifices-to-god-sab.html">371 Who may offer sacrifices to God?</a></td>
+            <td><a href="/who-was-the-father-of-salah-sab.html">372 Who was the father of Salah?</a></td></tr><tr>
+            <td><a href="/did-the-samaritans-receive-jesus-sab.html">373 Did the Samaritans receive Jesus?</a></td>
+            <td><a href="/should-the-gospel-be-preached-to-the-gentiles-and-samaritans-sab.html">374 Should the gospel be preached to the Gentiles and Samaritans?</a></td>
+            <td><a href="/when-was-the-last-time-that-samuel-saw-saul-sab.html">375 When was the last time that Samuel saw Saul?</a></td>
+            <td><a href="/who-was-samuels-firstborn-son-sab.html">376 Who was Samuel&#39;s firstborn son?</a></td></tr><tr>
+            <td><a href="/did-sarah-have-faith-that-she-would-conceive-sab.html">377 Did Sarah have faith that she would conceive?</a></td>
+            <td><a href="/when-did-satan-enter-judas-sab.html">378 When did Satan enter Judas?</a></td>
+            <td><a href="/how-did-saul-die-sab.html">379 How did Saul die?</a></td>
+            <td><a href="/did-all-of-sauls-family-die-with-him-sab.html">380 Did all of Saul&#39;s family die with him?</a></td></tr><tr>
+            <td><a href="/when-did-saul-meet-david-sab.html">381 When did Saul meet David?</a></td>
+            <td><a href="/when-did-is-saul-among-the-prophets-become-a-proverb-sab.html">382 When did &quot;Is Saul among the prophets?&quot; become a proverb?</a></td>
+            <td><a href="/who-were-sauls-sons-sab.html">383 Who were Saul&#39;s sons?</a></td>
+            <td><a href="/what-must-you-do-to-be-saved-sab.html">384 What must you do to be saved?</a></td></tr><tr>
+            <td><a href="/were-the-israelites-to-spare-the-trees-in-the-countries-they-invaded-sab.html">385 Were the Israelites to spare the trees in the countries they invaded?</a></td>
+            <td><a href="/did-jesus-have-secret-teachings-sab.html">386 Did Jesus have secret teachings?</a></td>
+            <td><a href="/was-sisera-murdered-in-his-sleep-sab.html">387 Was Sisera murdered in his sleep?</a></td>
+            <td><a href="/is-all-scripture-inspired-by-god-sab.html">388 Is all Scripture inspired by God?</a></td></tr><tr>
+            <td><a href="/should-we-let-others-see-our-good-works-sab.html">389 Should we let others see our good works?</a></td>
+            <td><a href="/can-god-be-seen-sab.html">390 Can God be seen?</a></td>
+            <td><a href="/the-children-of-senaah-sab.html">391 The children of Senaah</a></td>
+            <td><a href="/should-you-serve-god-alone-sab.html">392 Should you serve God alone?</a></td></tr><tr>
+            <td><a href="/what-does-the-earth-set-upon-sab.html">393 What does the earth set upon?</a></td>
+            <td><a href="/how-should-a-man-who-has-sex-with-a-menstruating-woman-be-punished-sab.html">394 How should a man who has sex with a menstruating woman be punished?</a></td>
+            <td><a href="/do-bad-things-happen-to-good-people-sab.html">395 Do bad things happen to good people?</a></td>
+            <td><a href="/what-did-the-sign-over-jesus-head-say-sab.html">396 What did the sign over Jesus&#39; head say?</a></td></tr><tr>
+            <td><a href="/did-jesus-perform-many-signs-and-wonders-sab.html">397 Did Jesus perform many signs and wonders?</a></td>
+            <td><a href="/what-did-judas-do-with-the-silver-sab.html">398 What did Judas do with the silver?</a></td>
+            <td><a href="/do-christians-sin-sab.html">399 Do Christians sin?</a></td>
+            <td><a href="/where-did-moses-receive-the-ten-commandments-sab.html">400 Where did Moses receive the Ten Commandments?</a></td></tr><tr>
+            <td><a href="/the-singers-sab.html">401 The singers</a></td>
+            <td><a href="/were-the-men-or-angels-sitting-or-standing-sab.html">402 Were the men or angels sitting or standing?</a></td>
+            <td><a href="/in-jesus-response-to-the-rich-young-man-what-was-the-six-commandment-on-his-list-of-the-commandments-sab.html">403 In Jesus&#39; response to the rich young man, what was the six commandment on his list of &quot;the commandments&quot;?</a></td>
+            <td><a href="/what-was-jonathans-first-slaughter-sab.html">404 What was Jonathan&#39;s first slaughter?</a></td></tr><tr>
+            <td><a href="/does-god-sleep-sab.html">405 Does God sleep?</a></td>
+            <td><a href="/how-many-valiant-men-drew-the-sword-for-israel-and-judah-as-counted-by-joab-sab.html">406 How many valiant men drew the sword for Israel and Judah as counted by Joab?</a></td>
+            <td><a href="/who-brought-joseph-into-egypt-sab.html">407 Who brought Joseph into Egypt?</a></td>
+            <td><a href="/was-solomon-davids-second-or-fourth-son-by-bathsheba-sab.html">408 Was Solomon David&#39;s second or fourth son by Bathsheba?</a></td></tr><tr>
+            <td><a href="/what-was-solomons-payment-to-hiram-sab.html">409 What was Solomon&#39;s payment to Hiram?</a></td>
+            <td><a href="/when-did-solomons-reign-begin-sab.html">410 When did Solomon&#39;s reign begin?</a></td>
+            <td><a href="/was-jesus-the-son-of-david-sab.html">411 Was Jesus the son of David?</a></td>
+            <td><a href="/how-many-sons-does-god-have-sab.html">412 How many sons does God have?</a></td></tr><tr>
+            <td><a href="/how-many-sons-did-gideon-have-sab.html">413 How many sons did Gideon have?</a></td>
+            <td><a href="/who-were-the-sons-of-heman-sab.html">414 Who were the sons of Heman?</a></td>
+            <td><a href="/was-jesus-silent-during-his-trial-before-pilate-sab.html">415 Was Jesus silent during his trial before Pilate?</a></td>
+            <td><a href="/how-did-jesus-cure-the-blind-man-sab.html">416 How did Jesus cure the blind man?</a></td></tr><tr>
+            <td><a href="/does-god-have-a-body-sab.html">417 Does God have a body?</a></td>
+            <td><a href="/how-many-stalls-did-solomon-have-sab.html">418 How many stalls did Solomon have?</a></td>
+            <td><a href="/when-were-the-stars-made-sab.html">419 When were the stars made?</a></td>
+            <td><a href="/is-it-ok-to-steal-sab.html">420 Is it OK to steal?</a></td></tr><tr>
+            <td><a href="/did-joshua-remove-the-twelve-stones-from-the-jordan-river-sab.html">421 Did Joshua remove the twelve stones from the Jordan River?</a></td>
+            <td><a href="/how-should-strangers-be-treated-sab.html">422 How should strangers be treated?</a></td>
+            <td><a href="/were-the-philistines-subdued-all-the-days-of-samuel-sab.html">423 Were the Philistines subdued all the days of Samuel?</a></td>
+            <td><a href="/why-did-god-turn-the-sundial-back-ten-degrees-sab.html">424 Why did God turn the sundial back ten degrees?</a></td></tr><tr>
+            <td><a href="/is-jesus-peaceful-sab.html">425 Is Jesus peaceful?</a></td>
+            <td><a href="/when-did-jesus-temple-tantrum-occur-sab.html">426 When did Jesus&#39; temple tantrum occur?</a></td>
+            <td><a href="/where-did-jesus-tell-his-disciples-to-go-after-his-resurrection-sab.html">427 Where did Jesus tell his disciples to go after his resurrection?</a></td>
+            <td><a href="/did-the-women-immediately-tell-the-disciples-sab.html">428 Did the women immediately tell the disciples?</a></td></tr><tr>
+            <td><a href="/did-jesus-say-destroy-this-temple-and-in-three-days-i-will-raise-it-up-sab.html">429 Did Jesus say, &quot;Destroy this temple, and in three days I will raise it up&quot;?</a></td>
+            <td><a href="/can-god-be-tempted-can-god-be-tempted-sab.html">430 Can God be tempted?Can God be tempted?</a></td>
+            <td><a href="/who-tempted-david-to-number-israel-sab.html">431 Who tempted David to number Israel?</a></td>
+            <td><a href="/has-god-ever-tempted-anyone-sab.html">432 Has God ever tempted anyone?</a></td></tr><tr>
+            <td><a href="/how-old-was-terah-when-he-died-sab.html">433 How old was terah when he died?</a></td>
+            <td><a href="/can-god-be-tempted-can-god-be-tempted-sab.html">434 Can God be tempted?Can God be tempted?</a></td>
+            <td><a href="/can-thieves-go-to-heaven-sab.html">435 Can thieves go to heaven?</a></td>
+            <td><a href="/did-god-address-jesus-directly-at-his-baptism-sab.html">436 Did God address Jesus directly at his baptism?</a></td></tr><tr>
+            <td><a href="/how-much-did-david-pay-for-the-threshing-floor-sab.html">437 How much did David pay for the threshing floor?</a></td>
+            <td><a href="/should-you-speak-in-tongues-sab.html">438 Should you speak in tongues?</a></td>
+            <td><a href="/was-it-ok-to-touch-the-risen-jesus-before-his-ascension-sab.html">439 Was it OK to touch the risen Jesus before his ascension?</a></td>
+            <td><a href="/when-did-the-transfiguration-occur-sab.html">440 When did the transfiguration occur?</a></td></tr><tr>
+            <td><a href="/may-adam-eat-from-any-tree-sab.html">441 May Adam eat from any tree?</a></td>
+            <td><a href="/what-were-the-twelve-or-thirteen-tribes-of-israel-sab.html">442 What were the twelve (or thirteen) tribes of Israel?</a></td>
+            <td><a href="/how-many-of-each-clean-animal-did-noah-take-into-the-ark-sab.html">443 How many of each clean animal did Noah take into the ark?</a></td>
+            <td><a href="/is-there-an-unforgivable-sin-sab.html">444 Is there an unforgivable sin?</a></td></tr><tr>
+            <td><a href="/is-it-ok-to-marry-unbelievers-sab.html">445 Is it OK to marry unbelievers?</a></td>
+            <td><a href="/where-did-god-kill-uzza-sab.html">446 Where did God kill Uzza?</a></td>
+            <td><a href="/what-did-the-soldiers-give-jesus-to-drink-sab.html">447 What did the soldiers give Jesus to drink?</a></td>
+            <td><a href="/did-jesus-go-to-heaven-after-he-died-but-before-his-ascension-sab.html">448 Did Jesus go to heaven after he died but before his ascension?</a></td></tr><tr>
+            <td><a href="/did-the-men-with-paul-hear-the-voice-sab.html">449 Did the men with Paul hear the voice?</a></td>
+            <td><a href="/where-did-moses-get-water-from-a-rock-sab.html">450 Where did Moses get water from a rock?</a></td>
+            <td><a href="/how-did-moses-get-water-out-of-the-rock-sab.html">451 How did Moses get water out of the rock?</a></td>
+            <td><a href="/does-god-ever-tire-sab.html">452 Does God ever tire?</a></td></tr><tr>
+            <td><a href="/was-jonah-swallowed-by-a-fish-or-a-whale-sab.html">453 Was Jonah swallowed by a fish or a whale?</a></td>
+            <td><a href="/who-or-what-is-the-ransom-for-the-righteous-sab.html">454 Who (or what) is the ransom for the righteous?</a></td>
+            <td><a href="/who-created-heaven-and-earth-sab.html">455 Who created heaven and earth?</a></td>
+            <td><a href="/who-made-the-ark-of-the-covenant-sab.html">456 Who made the ark of the covenant?</a></td></tr><tr>
+            <td><a href="/who-wrote-the-ten-commandments-sab.html">457 Who wrote the ten commandments?</a></td>
+            <td><a href="/does-god-destroy-both-the-righteous-and-the-wicked-sab.html">458 Does God destroy both the righteous and the wicked?</a></td>
+            <td><a href="/do-the-wicked-live-long-sab.html">459 Do the wicked live long?</a></td>
+            <td><a href="/is-gods-will-always-done-in-heaven-sab.html">460 Is God&#39;s will always done in heaven?</a></td></tr><tr>
+            <td><a href="/is-wisdom-a-good-thing-sab.html">461 Is wisdom a good thing?</a></td>
+            <td><a href="/does-wisdom-make-people-happy-sab.html">462 Does wisdom make people happy?</a></td>
+            <td><a href="/how-many-men-were-in-the-kings-presence-sab.html">463 How many men were in the king&#39;s presence?</a></td>
+            <td><a href="/who-is-for-or-against-jesus-sab.html">464 Who is for or against Jesus?</a></td></tr><tr>
+            <td><a href="/whom-did-the-women-see-at-the-tomb-sab.html">465 Whom did the women see at the tomb?</a></td>
+            <td><a href="/how-many-women-came-to-the-sepulchre-sab.html">466 How many women came to the sepulchre?</a></td>
+            <td><a href="/where-did-the-women-watching-the-crucifixion-stand-sab.html">467 Where did the women watching the crucifixion stand?</a></td>
+            <td><a href="/can-only-god-work-wonders-sab.html">468 Can only God work wonders?</a></td></tr><tr>
+            <td><a href="/how-are-people-judged-by-god-sab.html">469 How are people judged by God?</a></td>
+            <td><a href="/the-children-of-zattu-sab.html">470 The children of Zattu</a></td>
+            <td><a href="/who-was-zechariahs-father-sab.html">471 Who was Zechariah&#39;s father?</a></td>
+            <td><a href="/did-zedekiahs-eyes-behold-the-king-of-babylon-sab.html">472 Did Zedekiah&#39;s eyes behold the king of Babylon?</a></td></tr><tr>
+            <td><a href="/who-was-zerubbabels-father-sab.html">473 Who was Zerubbabel&#39;s father?</a></td>
+            <td><a href="/where-does-god-dwell-sab.html">474 Where does God dwell?</a></td>
+            <td><a href="/did-god-call-abraham-before-or-after-he-moved-to-haran-sab.html">475 Did God call Abraham before or after he moved to Haran?</a></td>
+        </tr>
+    </table><h4>Infidels.org Contradictions</h4>
+    <table class="contradictionsTable">
+        <tr>
+        
+        
+            <td><a href="/god-good-to-all-or-just-a-few-infidels-org.html">1 God good to all, or just a few?</a></td>
+            <td><a href="/war-or-peace-infidels-org.html">2 War or Peace?</a></td>
+            <td><a href="/who-is-the-father-of-joseph-infidels-org.html">3 Who is the father of Joseph?</a></td>
+            <td><a href="/who-was-at-the-empty-tomb-is-it-infidels-org.html">4 Who was at the Empty Tomb? Is it:</a></td></tr><tr>
+            <td><a href="/is-jesus-equal-to-or-lesser-than-infidels-org.html">5 Is Jesus equal to or lesser than?</a></td>
+            <td><a href="/which-first-beasts-or-man-infidels-org.html">6 Which first--beasts or man?</a></td>
+            <td><a href="/how-many-stalls-and-horsemen-infidels-org.html">7 How many stalls and horsemen?</a></td>
+            <td><a href="/is-it-folly-to-be-wise-or-not-infidels-org.html">8 Is it folly to be wise or not?</a></td></tr><tr>
+            <td><a href="/human-vs-ghostly-impregnation-infidels-org.html">9 Human vs. ghostly impregnation</a></td>
+            <td><a href="/the-sins-of-the-father-infidels-org.html">10 The sins of the father</a></td>
+            <td><a href="/rabbits-do-not-chew-their-cud-infidels-org.html">11 Rabbits do not chew their cud</a></td>
+            <td><a href="/fowl-from-waters-or-ground-infidels-org.html">12 Fowl from waters or ground?</a></td></tr><tr>
+            <td><a href="/odd-genetics-infidels-org.html">13 Odd genetics</a></td>
+            <td><a href="/the-shape-of-the-earth-infidels-org.html">14 The shape of the earth</a></td>
+            <td><a href="/snakes-while-built-low-do-not-eat-dirt-infidels-org.html">15 Snakes, while built low, do not eat dirt</a></td>
+            <td><a href="/earth-supported-heaven-supported-too-infidels-org.html">16 Earth supported? Heaven supported too</a></td></tr><tr>
+            <td><a href="/the-hydrological-cycle-infidels-org.html">17 The hydrological cycle</a></td>
+            <td><a href="/order-of-creation-infidels-org.html">18 Order of creation</a></td>
+            <td><a href="/moses-personality-infidels-org.html">19 Moses&#39; personality</a></td>
+            <td><a href="/righteous-live-infidels-org.html">20 Righteous live?</a></td></tr><tr>
+            <td><a href="/jesus-first-sermon-plain-or-mount-infidels-org.html">21 Jesus&#39; first sermon plain or mount?</a></td>
+            <td><a href="/jesus-last-words-infidels-org.html">22 Jesus&#39; last words</a></td>
+            <td><a href="/years-of-famine-infidels-org.html">23 Years of famine</a></td>
+            <td><a href="/the-genealogy-of-jesus-infidels-org.html">24 The GENEALOGY OF JESUS?</a></td></tr><tr>
+            <td><a href="/god-be-seen-infidels-org.html">25 God be seen?</a></td>
+            <td><a href="/cruel-unmerciful-destructive-and-ferocious-or-kind-merciful-and-good-infidels-org.html">26 CRUEL, UNMERCIFUL, DESTRUCTIVE, and FEROCIOUS or KIND, MERCIFUL, and GOOD:</a></td>
+            <td><a href="/tempts-infidels-org.html">27 Tempts?</a></td>
+            <td><a href="/judas-died-how-infidels-org.html">28 Judas died how?</a></td></tr><tr>
+            <td><a href="/ascend-to-heaven-infidels-org.html">29 Ascend to heaven</a></td>
+            <td><a href="/what-was-jesus-prediction-regarding-peters-denial-infidels-org.html">30 What was Jesus&#39; prediction regarding Peter&#39;s denial?</a></td>
+            <td><a href="/how-many-times-did-the-cock-crow-infidels-org.html">31 How many times did the cock crow?</a></td>
+            <td><a href="/how-many-beatitudes-in-the-sermon-on-the-mount-infidels-org.html">32 How many beatitudes in the Sermon on the Mount</a></td></tr><tr>
+            <td><a href="/does-every-man-sin-infidels-org.html">33 Does every man sin?</a></td>
+            <td><a href="/who-bought-potters-field-infidels-org.html">34 Who bought potter&#39;s field</a></td>
+            <td><a href="/who-prophesied-the-potters-field-infidels-org.html">35 Who prophesied the potter&#39;s field?</a></td>
+            <td><a href="/do-you-answer-a-fool-infidels-org.html">36 Do you answer a fool?</a></td></tr><tr>
+            <td><a href="/how-many-children-did-michal-the-daughter-of-saul-have-infidels-org.html">37 How many children did Michal, the daughter of Saul, have?</a></td>
+            <td><a href="/how-old-was-jehoiachin-when-he-began-to-reign-infidels-org.html">38 How old was Jehoiachin when he began to reign?</a></td>
+            <td><a href="/marriage-infidels-org.html">39 Marriage?</a></td>
+            <td><a href="/did-those-with-saul-paul-at-his-conversion-hear-a-voice-infidels-org.html">40 Did those with Saul/Paul at his conversion hear a voice?</a></td></tr><tr>
+            <td><a href="/where-was-jesus-three-days-after-his-baptism-infidels-org.html">41 Where was Jesus three days after his baptism?</a></td>
+            <td><a href="/how-many-apostles-were-in-office-between-the-resurrection-and-ascension-infidels-org.html">42 How many apostles were in office between the resurrection and ascension?</a></td>
+            <td><a href="/judging-infidels-org.html">43 Judging</a></td>
+            <td><a href="/good-deeds-infidels-org.html">44 Good deeds</a></td></tr><tr>
+            <td><a href="/for-or-against-infidels-org.html">45 For or against?</a></td>
+            <td><a href="/whom-did-they-see-at-the-tomb-infidels-org.html">46 Whom did they see at the tomb?</a></td>
+            <td><a href="/god-change-infidels-org.html">47 God change?</a></td>
+            <td><a href="/destruction-of-cities-what-said-was-jeremiah-was-zechariah-infidels-org.html">48 Destruction of cities (what said was jeremiah was zechariah)</a></td></tr><tr>
+            <td><a href="/whose-sepulchers-infidels-org.html">49 Whose sepulchers</a></td>
+            <td><a href="/when-second-coming-infidels-org.html">50 When second coming?</a></td>
+            <td><a href="/solomons-overseers-infidels-org.html">51 Solomon&#39;s overseers</a></td>
+            <td><a href="/the-mother-of-abijah-infidels-org.html">52 The mother of Abijah:</a></td></tr><tr>
+            <td><a href="/when-did-baasha-die-infidels-org.html">53 When did Baasha die?</a></td>
+            <td><a href="/how-old-was-ahaziah-when-he-began-to-reign-infidels-org.html">54 How old was Ahaziah when he began to reign?</a></td>
+            <td><a href="/what-was-the-color-of-the-robe-placed-on-jesus-during-his-trial-infidels-org.html">55 What was the color of the robe placed on Jesus during his trial?</a></td>
+            <td><a href="/what-did-they-give-him-to-drink-infidels-org.html">56 What did they give him to drink?</a></td></tr><tr>
+            <td><a href="/how-long-was-jesus-in-the-tomb-infidels-org.html">57 How long was Jesus in the tomb?</a></td>
+        </tr>
+    </table><h4>EvilBible.com Contradictions</h4>
+    <table class="contradictionsTable">
+        <tr>
+        
+        
+            <td><a href="/is-god-satisfied-with-his-works-evil-bible.html">1 Is God satisfied with his works?</a></td>
+            <td><a href="/does-god-dwell-in-temples-evil-bible.html">2 Does God dwell in temples?</a></td>
+            <td><a href="/does-god-dwell-in-light-or-darkness-evil-bible.html">3 Does God dwell in light or darkness?</a></td>
+            <td><a href="/can-god-be-seen-or-heard-evil-bible.html">4 Can God be seen or heard?</a></td></tr><tr>
+            <td><a href="/does-god-get-tired-evil-bible.html">5 Does God get tired?</a></td>
+            <td><a href="/does-god-see-and-know-all-things-evil-bible.html">6 Does God see and know all things?</a></td>
+            <td><a href="/does-god-know-the-hearts-of-men-evil-bible.html">7 Does God know the hearts of men?</a></td>
+            <td><a href="/is-god-all-powerful-evil-bible.html">8 Is God all powerful?</a></td></tr><tr>
+            <td><a href="/can-god-be-changed-evil-bible.html">9 Can God be changed?</a></td>
+            <td><a href="/is-god-just-and-impartial-evil-bible.html">10 Is God just and impartial?</a></td>
+            <td><a href="/is-god-the-author-of-evil-evil-bible.html">11 Is God the author of evil?</a></td>
+            <td><a href="/does-god-give-freely-or-withold-his-blessings-evil-bible.html">12 Does God give freely or withold his blessings?</a></td></tr><tr>
+            <td><a href="/is-god-to-be-found-by-those-who-seek-him-evil-bible.html">13 Is God to be found by those who seek him?</a></td>
+            <td><a href="/is-god-warlike-or-peaceful-evil-bible.html">14 Is God warlike or peaceful?</a></td>
+            <td><a href="/is-god-cruel-and-destructive-or-kind-and-merciful-evil-bible.html">15 Is God cruel and destructive or kind and merciful?</a></td>
+            <td><a href="/how-long-and-fierce-is-gods-anger-evil-bible.html">16 How long and fierce is God&#39;s anger?</a></td></tr><tr>
+            <td><a href="/does-god-want-burnt-offerings-and-sacrifices-evil-bible.html">17 Does God want burnt offerings and sacrifices?</a></td>
+            <td><a href="/does-god-accept-or-forbid-human-sacrifices-evil-bible.html">18 Does God accept or forbid human sacrifices?</a></td>
+            <td><a href="/does-god-tempt-people-evil-bible.html">19 Does God tempt people?</a></td>
+            <td><a href="/does-god-ever-lie-evil-bible.html">20 Does God ever lie?</a></td></tr><tr>
+            <td><a href="/does-god-destroy-man-for-his-wickedness-evil-bible.html">21 Does God destroy man for his wickedness?</a></td>
+            <td><a href="/can-gods-attributes-be-known-evil-bible.html">22 Can God&#39;s attributes be known?</a></td>
+            <td><a href="/how-many-gods-are-there-evil-bible.html">23 How many gods are there?</a></td>
+            <td><a href="/is-it-okay-to-rob-people-evil-bible.html">24 Is it okay to rob people?</a></td></tr><tr>
+            <td><a href="/is-it-okay-to-lie-evil-bible.html">25 Is it okay to lie?</a></td>
+            <td><a href="/is-it-okay-to-hate-the-edomites-evil-bible.html">26 Is it okay to hate the Edomites?</a></td>
+            <td><a href="/is-it-okay-to-kill-evil-bible.html">27 Is it okay to kill?</a></td>
+            <td><a href="/should-the-blood-shedder-be-put-to-death-evil-bible.html">28 Should the blood-shedder be put to death?</a></td></tr><tr>
+            <td><a href="/is-it-okay-to-make-images-evil-bible.html">29 Is it okay to make images?</a></td>
+            <td><a href="/is-slavery-and-oppression-okay-evil-bible.html">30 Is slavery and oppression okay?</a></td>
+            <td><a href="/is-improvidence-okay-evil-bible.html">31 Is improvidence okay?</a></td>
+            <td><a href="/is-it-okay-to-get-angry-evil-bible.html">32 Is it okay to get angry?</a></td></tr><tr>
+            <td><a href="/are-good-works-to-be-seen-of-men-evil-bible.html">33 Are good works to be seen of men?</a></td>
+            <td><a href="/is-it-okay-to-judge-others-evil-bible.html">34 Is it okay to judge others?</a></td>
+            <td><a href="/did-jesus-teach-physical-resistence-evil-bible.html">35 Did Jesus teach physical resistence?</a></td>
+            <td><a href="/should-you-fear-death-evil-bible.html">36 Should you fear death?</a></td></tr><tr>
+            <td><a href="/is-it-okay-to-pray-in-public-evil-bible.html">37 Is it okay to pray in public?</a></td>
+            <td><a href="/is-it-okay-to-ask-for-things-while-praying-evil-bible.html">38 Is it okay to ask for things while praying?</a></td>
+            <td><a href="/is-it-okay-to-have-long-hair-evil-bible.html">39 Is it okay to have long hair?</a></td>
+            <td><a href="/should-you-get-circumcized-evil-bible.html">40 Should you get circumcized?</a></td></tr><tr>
+            <td><a href="/should-you-follow-the-sabbath-evil-bible.html">41 Should you follow the Sabbath?</a></td>
+            <td><a href="/why-was-the-sabbath-instituted-evil-bible.html">42 Why was the Sabbath instituted?</a></td>
+            <td><a href="/should-you-do-work-on-the-sabbath-evil-bible.html">43 Should you do work on the Sabbath?</a></td>
+            <td><a href="/should-you-be-baptized-evil-bible.html">44 Should you be baptized?</a></td></tr><tr>
+            <td><a href="/what-kind-of-animals-can-you-eat-evil-bible.html">45 What kind of animals can you eat?</a></td>
+            <td><a href="/is-it-okay-to-take-an-oath-evil-bible.html">46 Is it okay to take an oath?</a></td>
+            <td><a href="/is-it-okay-to-get-married-evil-bible.html">47 Is it okay to get married?</a></td>
+            <td><a href="/can-you-get-divorced-evil-bible.html">48 Can you get divorced?</a></td></tr><tr>
+            <td><a href="/is-adultery-okay-evil-bible.html">49 Is adultery okay?</a></td>
+            <td><a href="/is-it-okay-to-you-marry-your-sister-evil-bible.html">50 Is it okay to you marry your sister?</a></td>
+            <td><a href="/is-it-okay-to-marry-your-brothers-widow-evil-bible.html">51 Is it okay to marry your brother&#39;s widow?</a></td>
+            <td><a href="/is-it-okay-to-hate-your-relatives-evil-bible.html">52 Is it okay to hate your relatives?</a></td></tr><tr>
+            <td><a href="/is-it-okay-to-drink-alcohol-or-get-drunk-evil-bible.html">53 Is it okay to drink alcohol or get drunk?</a></td>
+            <td><a href="/should-you-obey-your-rulers-evil-bible.html">54 Should you obey your rulers?</a></td>
+            <td><a href="/do-women-have-rights-evil-bible.html">55 Do women have rights?</a></td>
+            <td><a href="/should-you-obey-both-god-and-your-masters-evil-bible.html">56 Should you obey both God and your masters?</a></td></tr><tr>
+            <td><a href="/does-an-unpardonable-sin-exist-evil-bible.html">57 Does an unpardonable sin exist?</a></td>
+            <td><a href="/was-man-created-before-or-after-the-animals-evil-bible.html">58 Was man created before or after the animals?</a></td>
+            <td><a href="/do-seed-time-and-harvest-ever-cease-evil-bible.html">59 Do seed time and harvest ever cease?</a></td>
+            <td><a href="/who-hardened-the-pharaohs-heart-evil-bible.html">60 Who hardened the Pharaoh&#39;s heart?</a></td></tr><tr>
+            <td><a href="/did-all-the-cattle-horses-of-egypt-die-evil-bible.html">61 Did all the cattle/horses of Egypt die?</a></td>
+            <td><a href="/did-moses-fear-pharaoh-evil-bible.html">62 Did moses fear Pharaoh?</a></td>
+            <td><a href="/how-many-died-of-the-plague-evil-bible.html">63 How many died of the plague?</a></td>
+            <td><a href="/was-john-the-baptist-elias-evil-bible.html">64 Was John the Baptist Elias?</a></td></tr><tr>
+            <td><a href="/who-was-the-father-of-marys-husband-evil-bible.html">65 Who was the father of Mary&#39;s husband?</a></td>
+            <td><a href="/who-was-the-father-of-salah-evil-bible.html">66 Who was the father of Salah?</a></td>
+            <td><a href="/how-many-generation-from-abraham-to-david-evil-bible.html">67 How many generation from Abraham to David?</a></td>
+            <td><a href="/how-many-generations-from-the-babylonian-captivity-to-jesus-evil-bible.html">68 How many generations from the Babylonian captivity to Jesus?</a></td></tr><tr>
+            <td><a href="/was-the-infant-jesus-taken-into-egypt-evil-bible.html">69 Was the infant Jesus taken into Egypt??</a></td>
+            <td><a href="/was-jesus-tempted-in-the-wilderness-evil-bible.html">70 Was Jesus tempted in the wilderness?</a></td>
+            <td><a href="/where-did-jesus-preach-his-first-sermon-evil-bible.html">71 Where did Jesus preach his first sermon?</a></td>
+            <td><a href="/was-john-imprisoned-when-jesus-went-into-galilee-evil-bible.html">72 Was John imprisoned when Jesus went into Galilee?</a></td></tr><tr>
+            <td><a href="/were-jesus-disciples-told-to-go-forth-with-staff-and-sandals-evil-bible.html">73 Were Jesus&#39; disciples told to go forth with staff and sandals?</a></td>
+            <td><a href="/which-woman-besought-jesus-evil-bible.html">74 Which woman besought Jesus?</a></td>
+            <td><a href="/how-many-blind-men-besought-jesus-evil-bible.html">75 How many blind men besought Jesus?</a></td>
+            <td><a href="/when-was-jesus-crucified-evil-bible.html">76 When was Jesus crucified?</a></td></tr><tr>
+            <td><a href="/how-many-thieves-reviled-jesus-evil-bible.html">77 How many thieves reviled Jesus?</a></td>
+            <td><a href="/when-did-satan-enter-into-judas-evil-bible.html">78 When did Satan enter into Judas?</a></td>
+            <td><a href="/how-did-judas-die-evil-bible.html">79 How did Judas die?</a></td>
+            <td><a href="/who-purchased-the-potters-field-evil-bible.html">80 Who purchased the potter&#39;s field?</a></td></tr><tr>
+            <td><a href="/how-many-women-came-to-the-sepulchre-evil-bible.html">81 How many women came to the sepulchre?</a></td>
+            <td><a href="/when-did-they-come-to-the-sepulchre-evil-bible.html">82 When did they come to the sepulchre?</a></td>
+            <td><a href="/how-many-angels-were-at-the-sepulchre-evil-bible.html">83 How many angels were at the sepulchre?</a></td>
+            <td><a href="/how-many-nights-was-jesus-in-the-grave-evil-bible.html">84 How many nights was Jesus in the grave?</a></td></tr><tr>
+            <td><a href="/when-was-the-holy-ghost-bestowed-evil-bible.html">85 When was the holy ghost bestowed?</a></td>
+            <td><a href="/where-were-the-disciples-commanded-to-go-immediately-after-the-ressurection-evil-bible.html">86 Where were the disciples commanded to go immediately after the ressurection?</a></td>
+            <td><a href="/where-did-jesus-first-appear-to-the-eleven-disciples-evil-bible.html">87 Where did Jesus first appear to the eleven disciples?</a></td>
+            <td><a href="/where-did-jesus-ascend-evil-bible.html">88 Where did Jesus ascend?</a></td></tr><tr>
+            <td><a href="/did-pauls-attendants-hear-a-miraculous-voice-evil-bible.html">89 Did Paul&#39;s attendants hear a miraculous voice?</a></td>
+            <td><a href="/where-did-abraham-depart-to-evil-bible.html">90 Where did Abraham depart to?</a></td>
+            <td><a href="/how-many-sons-did-abraham-have-evil-bible.html">91 How many sons did Abraham have?</a></td>
+            <td><a href="/was-keturah-abrahams-wife-of-concubine-evil-bible.html">92 Was Keturah Abraham&#39;s wife of concubine?</a></td></tr><tr>
+            <td><a href="/did-abrahams-children-require-interposition-of-providence-evil-bible.html">93 Did Abraham&#39;s children require interposition of Providence?</a></td>
+            <td><a href="/who-bought-the-sepulchre-from-hamor-evil-bible.html">94 Who bought the sepulchre from Hamor?</a></td>
+            <td><a href="/was-canaan-promised-and-given-to-abraham-and-his-seed-evil-bible.html">95 Was Canaan promised and given to Abraham and his seed?</a></td>
+            <td><a href="/who-did-elhanan-kill-evil-bible.html">96 Who did Elhanan kill?</a></td></tr><tr>
+            <td><a href="/when-did-ahaziah-begin-to-reign-evil-bible.html">97 When did Ahaziah begin to reign?</a></td>
+            <td><a href="/how-many-children-did-michal-have-evil-bible.html">98 How many children did Michal have?</a></td>
+            <td><a href="/did-god-or-satan-tempt-david-to-number-the-people-of-israel-evil-bible.html">99 Did God or Satan tempt David to number the people of Israel?</a></td>
+            <td><a href="/how-many-men-did-israel-and-judah-have-evil-bible.html">100 How many men did Israel and Judah have?</a></td></tr><tr>
+            <td><a href="/did-david-sin-by-counting-the-people-evil-bible.html">101 Did David sin by counting the people?</a></td>
+            <td><a href="/how-many-years-of-famine-for-davids-sin-evil-bible.html">102 How many years of famine for David&#39;s sin?</a></td>
+            <td><a href="/how-many-horsemen-did-david-take-evil-bible.html">103 How many horsemen did David take?</a></td>
+            <td><a href="/how-much-did-david-pay-for-the-threshing-floor-evil-bible.html">104 How much did David pay for the threshing floor?</a></td></tr><tr>
+            <td><a href="/how-long-should-davids-throne-endure-evil-bible.html">105 How long should David&#39;s throne endure?</a></td>
+            <td><a href="/are-jesus-christ-and-god-equal-evil-bible.html">106 Are Jesus Christ and God equal?</a></td>
+            <td><a href="/is-jesus-all-powerful-evil-bible.html">107 Is Jesus all-powerful?</a></td>
+            <td><a href="/was-the-law-superceded-by-the-christian-dispensation-evil-bible.html">108 Was the law superceded by the Christian dispensation?</a></td></tr><tr>
+            <td><a href="/was-jesus-mission-peace-evil-bible.html">109 Was Jesus&#39; mission peace?</a></td>
+            <td><a href="/did-jesus-receive-testimony-from-men-evil-bible.html">110 Did Jesus receive testimony from men?</a></td>
+            <td><a href="/is-jesus-witness-of-himself-true-evil-bible.html">111 Is Jesus&#39; witness of himself true?</a></td>
+            <td><a href="/did-jesus-lay-down-his-life-for-friends-or-enemies-evil-bible.html">112 Did Jesus lay down his life for friends or enemies?</a></td></tr><tr>
+            <td><a href="/was-it-lawful-for-the-jews-to-kill-jesus-evil-bible.html">113 Was it lawful for the Jews to kill Jesus?</a></td>
+            <td><a href="/are-children-punished-for-the-sins-of-their-parents-evil-bible.html">114 Are children punished for the sins of their parents?</a></td>
+            <td><a href="/is-man-justified-by-faith-alone-evil-bible.html">115 Is man justified by faith alone?</a></td>
+            <td><a href="/can-you-fall-from-grace-evil-bible.html">116 Can you fall from grace?</a></td></tr><tr>
+            <td><a href="/is-anybody-without-sin-evil-bible.html">117 Is anybody without sin?</a></td>
+            <td><a href="/are-the-dead-resurrected-evil-bible.html">118 Are the dead resurrected?</a></td>
+            <td><a href="/are-reward-and-punishment-bestowed-in-this-world-evil-bible.html">119 Are reward and punishment bestowed in this world?</a></td>
+            <td><a href="/is-annihilation-or-endless-misery-the-portion-of-manking-evil-bible.html">120 Is annihilation or endless misery the portion of manking?</a></td></tr><tr>
+            <td><a href="/will-the-earth-ever-be-destroyed-evil-bible.html">121 Will the Earth ever be destroyed?</a></td>
+            <td><a href="/does-evil-happen-to-the-godly-evil-bible.html">122 Does evil happen to the godly?</a></td>
+            <td><a href="/are-good-and-prosperity-or-misery-and-destitution-the-lot-of-the-godly-evil-bible.html">123 Are good and prosperity or misery and destitution the lot of the godly??</a></td>
+            <td><a href="/is-worldly-prosperity-a-reward-or-a-curse-evil-bible.html">124 Is worldly prosperity a reward or a curse?</a></td></tr><tr>
+            <td><a href="/is-the-christian-yoke-easy-evil-bible.html">125 Is the Christian yoke easy?</a></td>
+            <td><a href="/is-the-fruit-of-gods-spirit-love-and-gentleness-or-fury-and-vengeance-evil-bible.html">126 Is the fruit of God&#39;s spirit love and gentleness or fury and vengeance?</a></td>
+            <td><a href="/do-the-wicked-live-long-evil-bible.html">127 Do the wicked live long?</a></td>
+            <td><a href="/are-poverty-or-riches-a-blessing-evil-bible.html">128 Are poverty or riches a blessing?</a></td></tr><tr>
+            <td><a href="/is-wisdom-a-source-of-enjoyment-or-grief-evil-bible.html">129 Is wisdom a source of enjoyment or grief?</a></td>
+            <td><a href="/is-a-good-name-a-blessing-or-curse-evil-bible.html">130 Is a good name a blessing or curse?</a></td>
+            <td><a href="/is-it-okay-to-laugh-evil-bible.html">131 Is it okay to laugh?</a></td>
+            <td><a href="/is-there-a-remedy-for-foolishness-evil-bible.html">132 Is there a remedy for foolishness?</a></td></tr><tr>
+            <td><a href="/should-a-fool-be-answered-according-to-his-folly-evil-bible.html">133 Should a fool be answered according to his folly?</a></td>
+            <td><a href="/is-temptation-desired-evil-bible.html">134 Is temptation desired?</a></td>
+            <td><a href="/is-prophecy-a-sure-thing-evil-bible.html">135 Is prophecy a sure thing?</a></td>
+            <td><a href="/how-many-years-will-men-live-evil-bible.html">136 How many years will men live?</a></td></tr><tr>
+            <td><a href="/is-every-animal-afraid-of-man-evil-bible.html">137 Is every animal afraid of man?</a></td>
+            <td><a href="/are-miracles-proof-of-divine-mission-evil-bible.html">138 Are miracles proof of divine mission?</a></td>
+            <td><a href="/was-moses-meek-or-cruel-evil-bible.html">139 Was Moses meek or cruel?</a></td>
+            <td><a href="/did-anybody-ascend-into-heaven-evil-bible.html">140 Did anybody ascend into heaven?</a></td></tr><tr>
+            <td><a href="/is-scripture-inspired-evil-bible.html">141 Is scripture inspired?</a></td>
+        </tr>
+    </table>
+<div class="footer">
+    <div>
+        <p>
+            This website aspires to be a beautiful and interactive resource for skeptics and believers alike to explore some of the more negative aspects of holy books, such as Bible contradictions, biblical inerrancy and the Bible as a source of morality.<br/>It was heavily inspired by the <a href="http://www.project-reason.org/gallery3/image/105/">Reason Project's poster of biblical contradictions</a>, which in turn was inspired by <a href="http://www.chrisharrison.net/index.php/Visualizations/BibleViz">Chris Harrison's Bible Visualizations</a>.
+        </p>
+        <p>
+            Many of the contradictions above stem from a literal interpretation of the stories in the Bible (biblical inerrancy). Some verses may be mistranslations, allegories, exaggerations, etc and can be interpreted in the context of the society in which they were written, rewritten, or otherwise modified over time, while others are very clear contradictions. Considering that 46% of Americans believe in a literal interpretation of Genesis (and probably other portions of the Bible) and the fact that many sects disagree on which parts to take literally, it seems reasonable to include these contradictions based on literal interpretation.
+        </p>
+        <p>
+            I hope to show that while the Bible may have much to offer us, biblical inerrancy and morality are not what it offers. Without inerrancy it's simple to see that we just do not know which parts are the word or will of God. Basing our morality on vile, disgusting stories from a long-forgotten era of humanity in a part of the world many have never even seen seems silly to me. What the Bible does offer us is an amazing look into humanity, our past, our desires and our fears.
+        </p>
+        <p>
+            This website and domain cost money, so please <a href="https://spb.io/0rgLYyRkJK">consider making a donation</a>. Your donations keep this website running for everyone to enjoy, and prevent annoying non-relevant ads.
+        </p>
+        <div>
+            <div id="google_translate_element"></div>
+        </div>
+    </div>
+    <div>
+        <div class="block">
+            Data for the charts were collected from copyrighted material by the <a href="http://www.skepticsannotatedbible.com">Skeptic's Annotated Bible</a>.
+        </div>
+        <div class="block" itemscope itemtype="http://schema.org/Code">
+            This website is free and open source. <a href="https://github.com/danielgtaylor/bibviz" itemprop="codeRepository">View and contribute to the project</a> on <i class="icon-github-alt"></i> Github!
+        </div>
+        <div class="block">
+            Quotes taken from the Authorized King James Version from 1769, which is a public domain work.
+        </div>
+        <div class="block">
+            Please consider a donation to <a href="http://secular.org/civicrm/contribute/transact">The Secular Coalition for America</a>, <a href="http://www.amnesty.org/en/donate">Amnesty International</a>, <a href="https://www.doctorswithoutborders.org/donate/onetime.cfm">Doctors Without Borders</a>, or <a href="http://www.supportunicef.org/">UNICEF</a>.
+        </div>
+        <div class="clear"></div>
+    </div>
+</div>
+<div id="selected">Hover over a line or bar to show more info about a contradiction, chapter or book.<br/></div>
+<div id="filter-notice">
+    <i class="icon-hand-left"></i> Check out these filters to modify the chart!
+</div>
+<div id="contra-notice">
+    <i class="icon-hand-down"></i> Click a line for more info!
+</div>
+
+            
+            <div id="footer">
+                
+                
+                    <div class="languageLinks">
+                        
+                            <a href="/">English</a>
+                        
+                            <a href="/index-de.html">Deutsch</a>
+                        
+                    </div>
+                
+                Website and chart code copyright &copy; 2013 Daniel G. Taylor.
+                <br/><br/>
+                <a rel="license" href="http://creativecommons.org/licenses/by-sa/3.0/deed.en_US">
+                    <img alt="Creative Commons" style="border-width:0" src="http://i.creativecommons.org/l/by-sa/3.0/88x31.png"/>
+                </a>
+                <br/><br/>
+                <a href="https://www.digitalocean.com/?refcode=1da202e90785">
+                    <img src="/img/digitalocean-badge-white.png", alt="Proudly hosted by Digital Ocean"/>
+                </a>
+                <br/>
+                <span style="font-size: 60%;">Use coupon <em>OMGSSD10</em> for $10 free!</span>
+                <br/><br/>
+            </div>
+            <a id="donate" href="https://spb.io/0rgLYyRkJK">
+                <i class="icon-credit-card"></i> Donate
+            </a>
+        </div>
+        
+    <!-- AddThis Smart Layers BEGIN -->
+<!-- Go to http://www.addthis.com/get/smart-layers to customize -->
+<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-52308f1c020c613e"></script>
+<script type="text/javascript">
+  addthis.layers({
+    'theme' : 'dark',
+    'share' : {
+      'position' : 'right',
+      'numPreferredServices' : 6
+    },
+    'recommended' : {}
+  });
+</script>
+<!-- AddThis Smart Layers END -->
+
+
+        
+            <script src="http://d3js.org/d3.v3.min.js" charset="utf-8"></script>
+        
+            <script src="/scripts/main.js?v=6" charset="utf-8"></script>
+        
+        <script>
+            (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+            (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+            m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+            })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+            ga('create', 'UA-16567764-5', 'bibviz.com');
+            ga('send', 'pageview');
+        </script>
+    </body>
+</html>
